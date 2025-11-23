@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FajneBreloki.pl - Najlepsze breloki w sieci</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="promo-banner">
+        <div>🎄 Świąteczna Promocja! Wszystkie breloki przecenione z <span style="text-decoration: line-through; opacity: 0.8;">45.00 zł</span>! 🎄</div>
+        <div style="font-size: 0.8em; margin-top: 2px; opacity: 0.9;">🎁 -15% przy zakupie dwóch, -25% przy trzech! 🎁</div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span>FajneBreloki<span class="dot">.pl</span></span>
+                <span class="logo-subtitle">kkkejkus.github.io/fajnebreloki <span class="subtitle-note">póki co🙄</span></span>
+            </a>
+            
+            <div class="nav-search-container" id="navSearchContainer">
+                <div class="dropdown">
+                    <button class="dropbtn">Kategorie<span class="arrow">▼</span></button>
+                    <div class="dropdown-content" id="artistList">
+                        <!-- Lista artystów generowana dynamicznie -->
+                    </div>
+                </div>
+                <input type="text" id="navSearchInput" class="nav-search-input" placeholder="🔎 Szukaj albumu...">
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Sklep</a></li>
+                <li><a href="index.html?page=shipping">Wysyłka</a></li>
+                <li><a href="index.html?page=contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- To jest miejsce, gdzie JavaScript będzie wstawiał treść -->
+    <main id="app" class="container">
+        <!-- Tutaj pojawi się Landing Page lub Produkt -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 FajneBreloki.pl. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

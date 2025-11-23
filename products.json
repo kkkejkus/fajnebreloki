@@ -1,0 +1,130 @@
+﻿[
+    {
+        "id": "custom-brelok",
+        "name": "PERSONALIZOWANY ALBUM ✨",
+        "artist": "Custom",
+        "price": 38.99,
+        "promoPrice": 33.99,
+        "isCustom": true,
+        "description": "Marzy Ci się <u>brelok z Twoim ulubionym</u>, niszowym albumem? A może chcesz sprawić komuś wyjątkowy prezent? <strong>Zamów brelok na wymiar!</strong> \n\n🎶 Ręcznie stworzony brelok (5cm×4.5cm×0.8cm) z okładką wybranego przez Ciebie albumu.\n💿 Wyposażony w chip NFC, który po zbliżeniu telefonu automatycznie otwiera album w Spotify.\n📱 W wiadomości przy zakupie możesz wskazać inną aplikację — np. Apple Music.\n\n✨ Jeśli interesuje cię konkretny album, sprawdź pozostałe oferty — być może jest już dostępny!\n\n📝 <u>Wypełnij formularz</u> poniżej, a odezwę się do Ciebie ze szczegółami!",
+        "images": [
+            "https://placehold.co/600x600/gold/white?text=CUSTOM+ALBUM",
+            "https://placehold.co/600x600/333/white?text=Twoja+Okladka"
+        ],
+        "vintedUrl": "",
+        "olxUrl": "",
+        "allegroUrl": ""
+    },
+    {
+        "id": "brelok-album-1",
+        "artist": "The Weeknd",
+        "album": "After Hours",
+        "price": 35.00,
+        "promoPrice": 30.99,
+        "images": [
+            "brelok1.jpg",
+            "brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/",
+        "olxUrl": "https://www.olx.pl/",
+        "allegroUrl": "https://allegrolokalnie.pl/"
+    },
+    {
+        "id": "brelok-album-2",
+        "artist": "Lana Del Rey",
+        "album": "Born To Die",
+        "price": 35.00,
+        "promoPrice": 30.99,
+        "images": [
+            "https://placehold.co/600x600/blue/white?text=Born+to+Die",
+            "https://placehold.co/600x600/333/white?text=NFC+Chip"
+        ],
+        "vintedUrl": "https://www.vinted.pl/",
+        "olxUrl": "https://www.olx.pl/",
+        "allegroUrl": "https://allegrolokalnie.pl/"
+    },
+    {
+        "id": "brelok-album-3",
+        "artist": "Travis Scott",
+        "album": "Utopia",
+        "price": 35.00,
+        "promoPrice": 30.99,
+        "images": [
+            "https://placehold.co/600x600/brown/white?text=Utopia",
+            "https://placehold.co/600x600/333/white?text=NFC+Chip"
+        ],
+        "vintedUrl": "https://www.vinted.pl/",
+        "olxUrl": "https://www.olx.pl/",
+        "allegroUrl": "https://allegrolokalnie.pl/"
+    },
+    {
+        "id": "brelok-album-4",
+        "artist": "The Weeknd",
+        "album": "Starboy",
+        "price": 35.00,
+        "promoPrice": 30.99,
+        "images": [
+            "https://placehold.co/600x600/red/black?text=Starboy",
+            "https://placehold.co/600x600/333/white?text=NFC+Chip"
+        ],
+        "vintedUrl": "https://www.vinted.pl/",
+        "olxUrl": "https://www.olx.pl/",
+        "allegroUrl": "https://allegrolokalnie.pl/"
+    },
+    {
+        "id": "brelok-album-5",
+        "artist": "Lana Del Rey",
+        "album": "Ultraviolence",
+        "price": 35.00,
+        "promoPrice": 30.99,
+        "images": [
+            "https://placehold.co/600x600/black/white?text=Ultraviolence",
+            "https://placehold.co/600x600/333/white?text=NFC+Chip"
+        ],
+        "vintedUrl": "https://www.vinted.pl/",
+        "olxUrl": "https://www.olx.pl/",
+        "allegroUrl": "https://allegrolokalnie.pl/"
+    },
+    {
+        "id": "brelok-album-6",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "price": 35.00,
+        "promoPrice": 30.99,
+        "images": [
+            "https://placehold.co/600x600/orange/black?text=Astroworld",
+            "https://placehold.co/600x600/333/white?text=NFC+Chip"
+        ],
+        "vintedUrl": "https://www.vinted.pl/",
+        "olxUrl": "https://www.olx.pl/",
+        "allegroUrl": "https://allegrolokalnie.pl/"
+    },
+    {
+        "id": "brelok-album-7",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "price": 35.00,
+        "promoPrice": 30.99,
+        "images": [
+            "https://placehold.co/600x600/black/white?text=AM",
+            "https://placehold.co/600x600/333/white?text=NFC+Chip"
+        ],
+        "vintedUrl": "https://www.vinted.pl/",
+        "olxUrl": "https://www.olx.pl/",
+        "allegroUrl": "https://allegrolokalnie.pl/"
+    },
+    {
+        "id": "brelok-album-8",
+        "artist": "Arctic Monkeys",
+        "album": "Favourite Worst Nightmare",
+        "price": 35.00,
+        "promoPrice": 30.99,
+        "images": [
+            "https://placehold.co/600x600/yellow/black?text=FWN",
+            "https://placehold.co/600x600/333/white?text=NFC+Chip"
+        ],
+        "vintedUrl": "https://www.vinted.pl/",
+        "olxUrl": "https://www.olx.pl/",
+        "allegroUrl": "https://allegrolokalnie.pl/"
+    }
+]
