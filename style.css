@@ -985,6 +985,18 @@ main {
     margin-top: 20px;
 }
 
+.footer-separator {
+    margin-left: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer-separator {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
 /* Lightbox */
 .lightbox {
     display: none;
@@ -1519,4 +1531,3 @@ main {
 .btn-vinted.no-badge::after {
     display: none;
 }
-
