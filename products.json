@@ -3,7 +3,7 @@
         "id": "custom-brelok",
         "name": "PERSONALIZOWANY ALBUM ✨",
         "artist": "Custom",
-        "price": 39.00,
+        "price": 39.0,
         "promoPrice": 33.99,
         "isCustom": true,
         "description": "Marzy Ci się <u>brelok z Twoim ulubionym</u>, niszowym albumem? A może chcesz sprawić komuś wyjątkowy prezent? <strong>Zamów brelok na wymiar!</strong>\n\n🎶 Ręcznie stworzony brelok (5cm×4.5cm×0.8cm) z okładką wybranego przez Ciebie albumu.\n💿 Wyposażony w chip NFC, który po zbliżeniu telefonu automatycznie otwiera album w Spotify.\n📱 W wiadomości przy zakupie możesz wskazać inną aplikację — np. Apple Music.\n\n📀 Jeśli interesuje cię konkretny album, sprawdź pozostałe oferty — być może jest już dostępny!\n💰 Przy zakupie kilku breloków <b>duża promka!</b>\n\n📝 <u>Wypełnij formularz</u> poniżej, a odezwę się do Ciebie ze szczegółami!",
@@ -11,21 +11,6 @@
             "media/brelok1 custom.jpg",
             "media/brelok2 custom.jpg"
         ]
-    },
-    {
-        "id": "arctic-monkeys-am",
-        "artist": "Arctic Monkeys",
-        "album": "AM",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/arctic monkeys - am/brelok1.jpg",
-            "media/arctic monkeys - am/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
         "id": "asap-rocky-at-long-last-asap",
@@ -88,6 +73,81 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "addison-rae-addison",
+        "artist": "Addison Rae",
+        "album": "Addison",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/addison rae - addison/brelok1.jpg",
+            "media/addison rae - addison/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "arctic-monkeys-am",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/arctic monkeys - am/brelok1.jpg",
+            "media/arctic monkeys - am/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "billie-eilish-happier-than-ever",
+        "artist": "Billie Eilish",
+        "album": "Happier Than Ever",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/billie eilish - happier than ever/brelok1.jpg",
+            "media/billie eilish - happier than ever/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "billie-eilish-hit-me-hard-and-soft",
+        "artist": "Billie Eilish",
+        "album": "Hit Me Hard and Soft",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/billie eilish - hit me hard and soft/brelok1.jpg",
+            "media/billie eilish - hit me hard and soft/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "billie-eilish-when-we-all-fall-asleep",
+        "artist": "Billie Eilish",
+        "album": "When We All Fall Asleep, Where Do We Go?",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/billie eilish - when we all fall asleep, where do we go/brelok1.jpg",
+            "media/billie eilish - when we all fall asleep, where do we go/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "charli-xcx-brat",
         "artist": "Charli XCX",
         "album": "Brat",
@@ -97,6 +157,66 @@
         "images": [
             "media/charli xcx - brat/brelok1.jpg",
             "media/charli xcx - brat/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "chase-atlantic-self-titled",
+        "artist": "Chase Atlantic",
+        "album": "Chase Atlantic (Self Titled)",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/chase atlantic - self titled/brelok1.jpg",
+            "media/chase atlantic - self titled/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "drake-nothing-was-the-same",
+        "artist": "Drake",
+        "album": "Nothing Was the Same (Deluxe)",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/drake - nothing was the same (deluxe)/brelok1.jpg",
+            "media/drake - nothing was the same (deluxe)/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "drake-scorpion",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/drake - scorpion/brelok1.jpg",
+            "media/drake - scorpion/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "drake-views",
+        "artist": "Drake",
+        "album": "Views",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/drake - views/brelok1.jpg",
+            "media/drake - views/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -125,8 +245,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/kanye - 808 & heartbreak/brelok1.jpg",
-            "media/kanye - 808 & heartbreak/brelok2.jpg"
+            "media/ye - 808 & heartbreak/brelok1.jpg",
+            "media/ye - 808 & heartbreak/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -140,8 +260,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/kanye - graduation/brelok1.jpg",
-            "media/kanye - graduation/brelok2.jpg"
+            "media/ye - graduation/brelok1.png",
+            "media/ye - graduation/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -155,8 +275,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/kanye - mbdtf/brelok1.jpg",
-            "media/kanye - mbdtf/brelok2.jpg"
+            "media/ye - mbdtf/brelok1.png",
+            "media/ye - mbdtf/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -170,8 +290,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/kanye - the college dropout/brelok1.jpg",
-            "media/kanye - the college dropout/brelok2.jpg"
+            "media/ye - the college dropout/brelok1.jpg",
+            "media/ye - the college dropout/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -185,8 +305,38 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/katseye - beautiful chaos/brelok1.jpg",
-            "media/katseye - beautiful chaos/brelok2.jpg"
+            "media/katseye - beautiful chaos/brelok1.png",
+            "media/katseye - beautiful chaos/brelok2.png"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "ken-carson-a-great-chaos",
+        "artist": "Ken Carson",
+        "album": "A Great Chaos",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ken carson - a great chaos/brelok1.jpg",
+            "media/ken carson - a great chaos/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "ken-carson-more-chaos",
+        "artist": "Ken Carson",
+        "album": "More Chaos",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ken carson - more chaos/brelok1.jpg",
+            "media/ken carson - more chaos/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -208,21 +358,6 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
-        "id": "kendrick-lamar-gkmc",
-        "artist": "Kendrick Lamar",
-        "album": "good kid, m.A.A.d city",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/kendrick lamar - gkmc/brelok1.jpg",
-            "media/kendrick lamar - gkmc/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
-    },
-    {
         "id": "kendrick-lamar-gnx",
         "artist": "Kendrick Lamar",
         "album": "GNX",
@@ -232,6 +367,21 @@
         "images": [
             "media/kendrick lamar - gnx/brelok1.jpg",
             "media/kendrick lamar - gnx/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "kendrick-lamar-gkmc",
+        "artist": "Kendrick Lamar",
+        "album": "good kid, m.A.A.d city",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/kendrick lamar - gkmc/brelok1.jpg",
+            "media/kendrick lamar - gkmc/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -298,6 +448,36 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "olivia-rodrigo-guts",
+        "artist": "Olivia Rodrigo",
+        "album": "GUTS",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/olivia rodrigo - guts/brelok1.jpg",
+            "media/olivia rodrigo - guts/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "olivia-rodrigo-sour",
+        "artist": "Olivia Rodrigo",
+        "album": "SOUR",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/olivia rodrigo - sour/brelok1.jpg",
+            "media/olivia rodrigo - sour/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "pbc-die-lit",
         "artist": "Playboi Carti",
         "album": "Die Lit",
@@ -305,8 +485,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/pbc - die lit/brelok1.jpg",
-            "media/pbc - die lit/brelok2.jpg"
+            "media/pbc - die lit/brelok1.png",
+            "media/pbc - die lit/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -315,13 +495,13 @@
     {
         "id": "pbc-music",
         "artist": "Playboi Carti",
-        "album": "Music",
+        "album": "MUSIC",
         "price": 35.0,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/pbc - music/brelok1.jpg",
-            "media/pbc - music/brelok2.jpg"
+            "media/pbc - music/brelok1.png",
+            "media/pbc - music/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -335,8 +515,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/pbc - self titled/brelok1.jpg",
-            "media/pbc - self titled/brelok2.jpg"
+            "media/pbc - self titled/brelok1.png",
+            "media/pbc - self titled/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -350,8 +530,23 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/pbc - whole lotta red/brelok1.jpg",
-            "media/pbc - whole lotta red/brelok2.jpg"
+            "media/pbc - whole lotta red/brelok1.png",
+            "media/pbc - whole lotta red/brelok2.png"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "sabrina-carpenter-mans-best-friend",
+        "artist": "Sabrina Carpenter",
+        "album": "Man's Best Friend",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/sabrina carpenter - man's best friend/brelok1.jpg",
+            "media/sabrina carpenter - man's best friend/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -418,6 +613,21 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "tate-mcrae-so-close-to-what",
+        "artist": "Tate McRae",
+        "album": "So Close To What",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/tate mcrae - so close to what/brelok1.jpg",
+            "media/tate mcrae - so close to what/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "taylor-swift-1989-tv",
         "artist": "Taylor Swift",
         "album": "1989 (Taylor's Version)",
@@ -427,6 +637,21 @@
         "images": [
             "media/taylor swift - 1989 taylor's version/brelok1.jpg",
             "media/taylor swift - 1989 taylor's version/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "taylor-swift-the-life-of-a-showgirl",
+        "artist": "Taylor Swift",
+        "album": "The Life of a Showgirl",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/taylor swift - the life of a showgirl/brelok1.jpg",
+            "media/taylor swift - the life of a showgirl/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -487,8 +712,8 @@
         "isPolish": false,
         "bestseller": true,
         "images": [
-            "media/travis scott - astroworld/brelok1.jpg",
-            "media/travis scott - astroworld/brelok2.jpg"
+            "media/travis scott - astroworld/brelok1.png",
+            "media/travis scott - astroworld/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -502,8 +727,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/travis scott - rodeo/brelok1.jpg",
-            "media/travis scott - rodeo/brelok2.jpg"
+            "media/travis scott - rodeo/brelok1.png",
+            "media/travis scott - rodeo/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -518,23 +743,38 @@
         "isPolish": false,
         "bestseller": true,
         "images": [
-            "media/travis scott - utopia/brelok1.jpg",
-            "media/travis scott - utopia/brelok2.jpg"
+            "media/travis scott - utopia/brelok1.png",
+            "media/travis scott - utopia/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
-        "id": "tyler-chromakopia",
-        "artist": "Tyler, The Creator",
-        "album": "Chromakopia",
+        "id": "tv-girl-who-really-cares",
+        "artist": "TV Girl",
+        "album": "Who Really Cares",
         "price": 35.0,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/tyler - chromakopia/brelok1.jpg",
-            "media/tyler - chromakopia/brelok2.jpg"
+            "media/tv girl - who really cares/brelok1.jpg",
+            "media/tv girl - who really cares/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "tyla-tyla",
+        "artist": "Tyla",
+        "album": "Tyla (Self Titled)",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/tyla - tyla/brelok1.jpg",
+            "media/tyla - tyla/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -548,8 +788,23 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/tyler - cmiygl/brelok1.jpg",
-            "media/tyler - cmiygl/brelok2.jpg"
+            "media/tyler - cmiygl/brelok1.png",
+            "media/tyler - cmiygl/brelok2.png"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "tyler-chromakopia",
+        "artist": "Tyler, The Creator",
+        "album": "Chromakopia",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/tyler - chromakopia/brelok1.png",
+            "media/tyler - chromakopia/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -563,8 +818,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/tyler - dttg/brelok1.jpg",
-            "media/tyler - dttg/brelok2.jpg"
+            "media/tyler - dttg/brelok1.png",
+            "media/tyler - dttg/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -578,8 +833,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/tyler - flower boy/brelok1.jpg",
-            "media/tyler - flower boy/brelok2.jpg"
+            "media/tyler - flower boy/brelok1.png",
+            "media/tyler - flower boy/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -593,8 +848,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/tyler - igor/brelok1.jpg",
-            "media/tyler - igor/brelok2.jpg"
+            "media/tyler - igor/brelok1.png",
+            "media/tyler - igor/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
