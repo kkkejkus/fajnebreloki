@@ -245,8 +245,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/ye - 808 & heartbreak/brelok1.jpg",
-            "media/ye - 808 & heartbreak/brelok2.jpg"
+            "media/kanye - 808 & heartbreak/brelok1.jpg",
+            "media/kanye - 808 & heartbreak/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -260,8 +260,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/ye - graduation/brelok1.png",
-            "media/ye - graduation/brelok2.png"
+            "media/kanye - graduation/brelok1.png",
+            "media/kanye - graduation/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -275,8 +275,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/ye - mbdtf/brelok1.png",
-            "media/ye - mbdtf/brelok2.png"
+            "media/kanye - mbdtf/brelok1.png",
+            "media/kanye - mbdtf/brelok2.png"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -290,8 +290,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/ye - the college dropout/brelok1.jpg",
-            "media/ye - the college dropout/brelok2.jpg"
+            "media/kanye - the college dropout/brelok1.jpg",
+            "media/kanye - the college dropout/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -871,3 +871,4 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     }
 ]
+
