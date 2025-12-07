@@ -599,9 +599,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h1 style="text-align: center; margin-bottom: 40px;">Informacje o wysyłce 📦</h1>
                 
                 <div style="margin-bottom: 50px; text-align: center; padding: 20px; background: #f0f8ff; border-radius: 15px; border: 1px solid #d1e7dd; max-width: 600px; margin-left: auto; margin-right: auto;">
-                    <h3 style="color: #0f5132; margin-bottom: 10px;">⏱️ Czas realizacji</h3>
+                    <h3 style="color: #0f5132; margin-bottom: 15px;">⏱️ Czas realizacji</h3>
                     <p style="font-size: 1.1rem; margin-bottom: 5px;"><strong>Standardowe breloki:</strong> wysyłka w 24h</p>
-                    <p style="font-size: 1.1rem;"><strong>Breloki customowe:</strong> wysyłka do 48h</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Breloki customowe:</strong> wysyłka do 48h</p>
+                    
+                    <div style="border-top: 1px solid #d1e7dd; margin: 10px 40px; padding-top: 15px;">
+                        <p style="font-size: 1.1rem;"><strong>📍 Odbiór osobisty:</strong> Wrocław</p>
+                        <p style="font-size: 0.9rem; color: #555">(po wcześniejszym umówieniu)</p>
+                    </div>
                 </div>
 
                 <div class="pricing-table">
