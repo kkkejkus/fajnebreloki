@@ -1,6 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
     const app = document.getElementById('app');
 
+    // Theme Logic
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const body = document.body;
+    
+    // Check saved theme or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        body.classList.add('dark-mode');
+        if (themeToggleBtn) {
+            themeToggleBtn.textContent = '🌛';
+            themeToggleBtn.title = "Kliknij, aby przełączyć na tryb jasny";
+
+        }
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            
+            // Update icon
+            themeToggleBtn.textContent = isDark ? '🌛' : '🌤️';
+            themeToggleBtn.title = isDark ? "Kliknij, aby przełączyć na tryb jasny" : "Kliknij, aby przełączyć na tryb ciemny";
+            
+            // Save preference
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    }
+
     // Global Filter State
     window.currentCategoryFilter = 'ALL'; // ALL, POLISH, FOREIGN, ARTIST
     window.currentCategoryValue = null;
@@ -124,6 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderShippingPage();
             } else if (page === 'faq') {
                 renderFaqPage();
+            } else if (page === 'privacy') {
+                renderPrivacyPage();
             } else {
                 renderLandingPage(products);
             }
@@ -140,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.title = 'Kontakt - FajneBreloki.pl';
         app.innerHTML = `
-            <div style="max-width: 800px; margin: 0 auto; padding: 40px 20px; background: white; border-radius: 0 0 20px 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <div class="contact-container" style="max-width: 800px; margin: 0 auto; padding: 40px 20px; background: white; border-radius: 0 0 20px 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
                 <h1 style="text-align: center; margin-bottom: 40px;">Skontaktuj się ze mną 📞</h1>
                 
                 <div class="contact-grid">
@@ -181,12 +214,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const html = `
             <section class="hero">
                 <div class="hero-content">
-                    <h1>Muzyka zawsze przy Tobie🎶</h1>
+                    <h1>Muzyka zawsze przy Tobie 🎶</h1>
                     <p>Unikalne breloki w kształcie mini płyt CD z chipem NFC.<br/>Zbliż telefon i odtwarzaj swój ulubiony album w Spotify! 🎧</p>
                 </div>
                 <div class="hero-image">
-                    <img id="heroImage" src="media/main1.png" alt="Brelok z muzyką">
-                    <button id="heroNextBtn" class="hero-arrow" title="Następne zdjęcie">❯</button>
+                    <img id="heroImage" src="media/main1.png" alt="Gotowy brelok" style="cursor: zoom-in;">
                 </div>
             </section>
             
@@ -209,12 +241,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Hero Image Slider Logic
         const heroImage = document.getElementById('heroImage');
-        const heroNextBtn = document.getElementById('heroNextBtn');
-        if (heroImage && heroNextBtn) {
+        if (heroImage) {
             const images = ['media/main1.png', 'media/main2.png'];
             let currentImageIndex = 0;
             
-            heroNextBtn.addEventListener('click', () => {
+            // Setup lightbox for hero images
+            lightboxImages = images;
+            
+            heroImage.addEventListener('click', () => {
+                openLightbox(currentImageIndex);
+            });
+
+            // Automatic slideshow
+            setInterval(() => {
                 currentImageIndex = (currentImageIndex + 1) % images.length;
                 heroImage.style.opacity = 0;
                 
@@ -225,10 +264,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     tempImg.onload = () => {
                         heroImage.src = newSrc;
                         heroImage.style.opacity = 1;
+                        if (currentImageIndex === 1) heroImage.style.transform = 'rotate(2deg)';
+                        else heroImage.style.transform = 'rotate(-2deg)';
                     };
                     tempImg.src = newSrc;
-                }, 200);
-            });
+                }, 250);
+            }, 5000);
         }
 
         // Obsługa przełączania widoku
@@ -598,7 +639,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div style="max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
                 <h1 style="text-align: center; margin-bottom: 40px;">Informacje o wysyłce 📦</h1>
                 
-                <div style="margin-bottom: 50px; text-align: center; padding: 20px; background: #f0f8ff; border-radius: 15px; border: 1px solid #d1e7dd; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <div class="shipping-info-box" style="margin-bottom: 50px; text-align: center; padding: 20px; background: #f0f8ff; border-radius: 15px; border: 1px solid #d1e7dd; max-width: 600px; margin-left: auto; margin-right: auto;">
                     <h3 style="color: #0f5132; margin-bottom: 15px;">⏱️ Czas realizacji</h3>
                     <p style="font-size: 1.1rem; margin-bottom: 5px;"><strong>Standardowe breloki:</strong> wysyłka w 24h</p>
                     <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Breloki customowe:</strong> wysyłka do 48h</p>
@@ -734,6 +775,63 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
+
+    function renderPrivacyPage() {
+        const navSearchContainer = document.getElementById('navSearchContainer');
+        if (navSearchContainer) navSearchContainer.style.display = 'none';
+
+        document.title = 'Polityka Prywatności - FajneBreloki.pl';
+        app.innerHTML = `
+            <div style="max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.6;">
+                <h1 style="text-align: center; margin-bottom: 40px;">Polityka Prywatności</h1>
+                
+                <section style="margin-bottom: 30px;">
+                    <h2>1. Informacje ogólne</h2>
+                    <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazanych przez Użytkowników w związku z korzystaniem ze strony internetowej FajneBreloki.pl.</p>
+                    <p>Administratorem danych osobowych jest właściciel serwisu FajneBreloki.pl (kontakt poprzez formularz kontaktowy).</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>2. Jakie dane zbieramy?</h2>
+                    <p>Podczas korzystania z naszej strony możemy zbierać następujące dane:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Dane kontaktowe:</strong> adres e-mail oraz treść wiadomości (w przypadku skorzystania z formularza kontaktowego).</li>
+                        <li><strong>Dane techniczne:</strong> informacje o preferencjach wyświetlania strony (tryb jasny/ciemny) zapisywane w pamięci przeglądarki (LocalStorage).</li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>3. Cel przetwarzania danych</h2>
+                    <p>Twoje dane przetwarzane są wyłącznie w celu:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                        <li>Udzielenia odpowiedzi na przesłane zapytania.</li>
+                        <li>Realizacji zamówień (w przypadku kontaktu bezpośredniego).</li>
+                        <li>Zapewnienia prawidłowego działania strony (zapamiętanie wybranego motywu).</li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>4. Pliki Cookies i LocalStorage</h2>
+                    <p>Strona nie używa śledzących plików cookies (tracking cookies) ani narzędzi analitycznych firm trzecich (np. Google Analytics).</p>
+                    <p>Wykorzystujemy jedynie mechanizm <strong>LocalStorage</strong> do zapamiętania Twoich preferencji dotyczących wyglądu strony (tryb jasny/ciemny). Dane te są przechowywane wyłącznie na Twoim urządzeniu i nie są nigdzie przesyłane.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>5. Udostępnianie danych</h2>
+                    <p>Twoje dane nie są sprzedawane ani udostępniane podmiotom trzecim, chyba że jest to niezbędne do realizacji zamówienia (np. firmy kurierskie, platformy sprzedażowe typu Vinted/OLX) lub wynika z obowiązku prawnego.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>6. Twoje prawa</h2>
+                    <p>Masz prawo do wglądu w swoje dane, ich poprawiania, żądania usunięcia lub ograniczenia przetwarzania. W tym celu skontaktuj się z nami poprzez formularz kontaktowy.</p>
+                </section>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="index.html" class="btn-buy btn-vinted no-badge" style="display: inline-block; width: auto; font-size: 1rem;">Wróć do strony głównej</a>
+                </div>
+            </div>
+        `;
+    }
 });
 
 // Global variables for lightbox
@@ -829,7 +927,8 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
 if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent click from bubbling to document immediately
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
@@ -840,5 +939,13 @@ if (hamburger && navLinks) {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
         });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
     });
 }
