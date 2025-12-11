@@ -268,6 +268,21 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "kanye-west-kids-see-ghosts",
+        "artist": "Kanye West & Kid Cudi",
+        "album": "Kids See Ghosts",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/kid cudi & kanye west - kids see ghosts/brelok1.jpg",
+            "media/kid cudi & kanye west - kids see ghosts/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "kanye-west-mbdtf",
         "artist": "Kanye West",
         "album": "My Beautiful Dark Twisted Fantasy",
@@ -412,6 +427,21 @@
         "images": [
             "media/kendrick lamar - tpab/brelok1.jpg",
             "media/kendrick lamar - tpab/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "mata-100-dni-do-matury",
+        "artist": "Mata",
+        "album": "100 dni do matury",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/mata - 100 dni do matury/brelok1.jpg",
+            "media/mata - 100 dni do matury/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -871,3 +901,4 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     }
 ]
+
