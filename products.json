@@ -13,6 +13,51 @@
         ]
     },
     {
+        "id": "ariana-grande-eternal-sunshine",
+        "artist": "Ariana Grande",
+        "album": "Eternal Sunshine",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ariana grande - eternal sunshine/brelok1.jpg",
+            "media/ariana grande - eternal sunshine/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "ariana-grande-positions",
+        "artist": "Ariana Grande",
+        "album": "Positions",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ariana grande - positions/brelok1.jpg",
+            "media/ariana grande - positions/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "ariana-grande-thank-u-next",
+        "artist": "Ariana Grande",
+        "album": "thank u. next",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ariana grande - thank u. next/brelok1.jpg",
+            "media/ariana grande - thank u. next/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "asap-rocky-at-long-last-asap",
         "artist": "A$AP Rocky",
         "album": "At. Long. Last. A$AP",
@@ -223,6 +268,51 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "dua-lipa-future-nostalgia",
+        "artist": "Dua Lipa",
+        "album": "Future Nostalgia",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/dua lipa - future nostalgia/brelok1.jpg",
+            "media/dua lipa - future nostalgia/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "dua-lipa-radical-optimism",
+        "artist": "Dua Lipa",
+        "album": "Radical Optimism",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/dua lipa - radical optimism/brelok1.jpg",
+            "media/dua lipa - radical optimism/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "dua-lipa-self-titled",
+        "artist": "Dua Lipa",
+        "album": "Dua Lipa (Self Titled)",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/dua lipa - self titled/brelok1.jpg",
+            "media/dua lipa - self titled/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "eazy-e-eazy-duz-it",
         "artist": "Eazy-E",
         "album": "Eazy-Duz-It",
@@ -232,6 +322,51 @@
         "images": [
             "media/eazy-e - eazy-duz-it/brelok1.jpg",
             "media/eazy-e - eazy-duz-it/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "harry-styles-fine-line",
+        "artist": "Harry Styles",
+        "album": "Fine Line",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/harry styles - fine line/brelok1.jpg",
+            "media/harry styles - fine line/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "harry-styles-harrys-house",
+        "artist": "Harry Styles",
+        "album": "Harry's House",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/harry styles - harry's house/brelok1.jpg",
+            "media/harry styles - harry's house/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "illit-not-cute-anymore",
+        "artist": "Illit",
+        "album": "Not Cute Anymore",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/illit - not cute anymore/brelok1.jpg",
+            "media/illit - not cute anymore/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -478,6 +613,21 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "michael-jackson-thriller",
+        "artist": "Michael Jackson",
+        "album": "Thriller",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/michael jackson - thriller/brelok1.jpg",
+            "media/michael jackson - thriller/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "olivia-rodrigo-guts",
         "artist": "Olivia Rodrigo",
         "album": "GUTS",
@@ -652,6 +802,21 @@
         "images": [
             "media/tate mcrae - so close to what/brelok1.jpg",
             "media/tate mcrae - so close to what/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "tate-mcrae-think-later",
+        "artist": "Tate McRae",
+        "album": "Think Later",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/tate mcrae - think later/brelok1.jpg",
+            "media/tate mcrae - think later/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -901,4 +1066,5 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     }
 ]
+
 
