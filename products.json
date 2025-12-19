@@ -8,8 +8,8 @@
         "isCustom": true,
         "description": "Marzy Ci się <u>brelok z Twoim ulubionym</u>, niszowym albumem? A może chcesz sprawić komuś wyjątkowy prezent? <strong>Zamów brelok na wymiar!</strong>\n\n🎶 Ręcznie stworzony brelok (5cm×4.5cm×0.8cm) z okładką wybranego przez Ciebie albumu.\n💿 Wyposażony w chip NFC, który po zbliżeniu telefonu automatycznie otwiera album w Spotify.\n📱 W wiadomości przy zakupie możesz wskazać inną aplikację — np. Apple Music.\n\n📀 Jeśli interesuje cię konkretny album, sprawdź pozostałe oferty — być może jest już dostępny!\n💰 Przy zakupie kilku breloków <b>duża promka!</b>\n\n📝 <u>Wypełnij formularz</u> poniżej, a odezwę się do Ciebie ze szczegółami!",
         "images": [
-            "media/custom brelok1.jpg",
-            "media/custom brelok2.jpg"
+            "media/brelok1 custom.jpg",
+            "media/brelok2 custom.jpg"
         ]
     },
     {
@@ -1126,3 +1126,4 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     }
 ]
+
