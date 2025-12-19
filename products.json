@@ -8,8 +8,8 @@
         "isCustom": true,
         "description": "Marzy Ci się <u>brelok z Twoim ulubionym</u>, niszowym albumem? A może chcesz sprawić komuś wyjątkowy prezent? <strong>Zamów brelok na wymiar!</strong>\n\n🎶 Ręcznie stworzony brelok (5cm×4.5cm×0.8cm) z okładką wybranego przez Ciebie albumu.\n💿 Wyposażony w chip NFC, który po zbliżeniu telefonu automatycznie otwiera album w Spotify.\n📱 W wiadomości przy zakupie możesz wskazać inną aplikację — np. Apple Music.\n\n📀 Jeśli interesuje cię konkretny album, sprawdź pozostałe oferty — być może jest już dostępny!\n💰 Przy zakupie kilku breloków <b>duża promka!</b>\n\n📝 <u>Wypełnij formularz</u> poniżej, a odezwę się do Ciebie ze szczegółami!",
         "images": [
-            "media/brelok1 custom.jpg",
-            "media/brelok2 custom.jpg"
+            "media/custom brelok1.jpg",
+            "media/custom brelok2.jpg"
         ]
     },
     {
@@ -328,6 +328,21 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "gorillaz-demon-days",
+        "artist": "Gorillaz",
+        "album": "Demon Days",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/gorillaz - demon days/brelok1.jpg",
+            "media/gorillaz - demon days/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "harry-styles-fine-line",
         "artist": "Harry Styles",
         "album": "Fine Line",
@@ -613,6 +628,21 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "michael-jackson-invincible",
+        "artist": "Michael Jackson",
+        "album": "Invincible",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/michael jackson - invincible/brelok1.jpg",
+            "media/michael jackson - invincible/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "michael-jackson-thriller",
         "artist": "Michael Jackson",
         "album": "Thriller",
@@ -622,6 +652,21 @@
         "images": [
             "media/michael jackson - thriller/brelok1.jpg",
             "media/michael jackson - thriller/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "michael-jackson-michael",
+        "artist": "Michael Jackson",
+        "album": "Michael",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/michael jackson - michael/brelok1.jpg",
+            "media/michael jackson - michael/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -712,6 +757,21 @@
         "images": [
             "media/pbc - whole lotta red/brelok1.jpg",
             "media/pbc - whole lotta red/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
+        "id": "raye-my-21st-century-blues",
+        "artist": "RAYE",
+        "album": "My 21st Century Blues",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/raye - my 21st century blues/brelok1.jpg",
+            "media/raye - my 21st century blues/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -1066,5 +1126,3 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     }
 ]
-
-
