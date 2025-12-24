@@ -37,6 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
     window.currentCategoryValue = null;
     window.currentInputLabel = null;
 
+    // Preload hero images early to avoid a brief blank state on first render
+    ['media/main1.png', 'media/main2.png'].forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+
     // Pobierz dane produktów
     fetch('products.json')
         .then(response => response.json())
@@ -178,25 +184,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 <div class="contact-grid">
                     <div style="text-align: center; padding: 30px; background: #f9f9f9; border-radius: 15px;">
-                        <h3 style="margin-bottom: 15px;">📧 Email</h3>
+                        <h3 style="margin-bottom: 8px;">📧 Email</h3>
                         <p style="font-size: 1.1rem;">
                             <a href="mailto:kamiljama@gmail.com" title="Kliknij, aby napisać maila" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">kamiljama@gmail.com</a>
                         </p>
-                        <p style="margin-top: 10px; color: #666; font-size: 0.9rem;">Odpisuję zazwyczaj w ciągu 12h</p>
+                        <p style="margin-top: 8px; color: var(--muted-text-color); font-size: 0.9rem;">Odpisuję zazwyczaj w ciągu 12h</p>
                     </div>
 
                     <div style="text-align: center; padding: 30px; background: #f9f9f9; border-radius: 15px;">
-                        <h3 style="margin-bottom: 15px;">📸 Instagram</h3>
+                        <h3 style="margin-bottom: 8px;">📸 Instagram</h3>
                         <p style="font-size: 1.1rem;">
                             <a href="https://instagram.com/kkkejkus" title="Kliknij, aby przejść do Instagrama" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">@kkkejkus</a>
                         </p>
-                        <p style="margin-top: 10px; color: #666; font-size: 0.9rem;">Odpisuję zazwyczaj w ciągu 1h</p>
+                        <p style="margin-top: 8px; color: var(--muted-text-color); font-size: 0.9rem;">Odpisuję zazwyczaj w ciągu 1h</p>
                     </div>
                 </div>
 
-                <div style="margin-top: 50px; text-align: center;">
-                    <h3>Masz pytanie o zamówienie? 🎁</h3>
-                    <p style="color: #555; margin-top: 10px;">
+                <div style="margin-top: 40px; text-align: center;">
+                    <h3>Masz konkretne pytanie? 💬</h3>
+                    <p style="color: var(--muted-text-color); margin-top: 8px;">
                         Najszybciej skontaktujesz się ze mną poprzez wiadomość prywatną na Instagramie.<br/>Odpowiedzi na maile mogą czasem zająć trochę więcej czasu.
                     </p>
                 </div>
@@ -218,7 +224,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Unikalne breloki w kształcie mini płyt CD z chipem NFC.<br/>Zbliż telefon i odtwarzaj swój ulubiony album w Spotify! 🎧</p>
                 </div>
                 <div class="hero-image">
-                    <img id="heroImage" src="media/main1.png" alt="Gotowy brelok" style="cursor: zoom-in;">
+                    <img id="heroImageA" class="hero-image-layer active tilt-left" src="media/main1.png" alt="Gotowy brelok" style="cursor: zoom-in;">
+                    <img id="heroImageB" class="hero-image-layer hero-image-layer-overlay tilt-left" src="media/main1.png" alt="Gotowy brelok" aria-hidden="true" style="cursor: zoom-in;">
                 </div>
             </section>
             
@@ -239,36 +246,60 @@ document.addEventListener('DOMContentLoaded', () => {
         const productsGrid = document.getElementById('productsGrid');
         const viewBtns = document.querySelectorAll('.view-toggle-btn');
 
-        // Hero Image Slider Logic
-        const heroImage = document.getElementById('heroImage');
-        if (heroImage) {
+        // Hero Image Slider Logic (cross-fade)
+        const heroImageA = document.getElementById('heroImageA');
+        const heroImageB = document.getElementById('heroImageB');
+        if (heroImageA && heroImageB) {
             const images = ['media/main1.png', 'media/main2.png'];
             let currentImageIndex = 0;
-            
+            let activeLayer = 'A';
+
             // Setup lightbox for hero images
             lightboxImages = images;
-            
-            heroImage.addEventListener('click', () => {
+
+            const handleHeroClick = () => {
                 openLightbox(currentImageIndex);
-            });
+            };
+            heroImageA.addEventListener('click', handleHeroClick);
+            heroImageB.addEventListener('click', handleHeroClick);
+
+            const applyTilt = (imgEl, index) => {
+                imgEl.classList.remove('tilt-left', 'tilt-right');
+                imgEl.classList.add(index === 1 ? 'tilt-right' : 'tilt-left');
+            };
+
+            // Initialize
+            heroImageA.src = images[0];
+            heroImageB.src = images[0];
+            heroImageA.classList.add('active');
+            heroImageB.classList.remove('active');
+            applyTilt(heroImageA, 0);
+            applyTilt(heroImageB, 0);
+
+            const showHeroIndex = (nextIndex) => {
+                const incoming = activeLayer === 'A' ? heroImageB : heroImageA;
+                const outgoing = activeLayer === 'A' ? heroImageA : heroImageB;
+                const newSrc = images[nextIndex];
+
+                // Preload to avoid flashing
+                const tempImg = new Image();
+                tempImg.onload = () => {
+                    incoming.src = newSrc;
+                    applyTilt(incoming, nextIndex);
+
+                    incoming.classList.add('active');
+                    outgoing.classList.remove('active');
+
+                    activeLayer = activeLayer === 'A' ? 'B' : 'A';
+                    currentImageIndex = nextIndex;
+                };
+                tempImg.src = newSrc;
+            };
 
             // Automatic slideshow
             setInterval(() => {
-                currentImageIndex = (currentImageIndex + 1) % images.length;
-                heroImage.style.opacity = 0;
-                
-                setTimeout(() => {
-                    const newSrc = images[currentImageIndex];
-                    // Preload image to ensure smooth transition
-                    const tempImg = new Image();
-                    tempImg.onload = () => {
-                        heroImage.src = newSrc;
-                        heroImage.style.opacity = 1;
-                        if (currentImageIndex === 1) heroImage.style.transform = 'rotate(2deg)';
-                        else heroImage.style.transform = 'rotate(-2deg)';
-                    };
-                    tempImg.src = newSrc;
-                }, 250);
+                const nextIndex = (currentImageIndex + 1) % images.length;
+                showHeroIndex(nextIndex);
             }, 5000);
         }
 
@@ -392,7 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function renderGrid(filteredProducts) {
             if (filteredProducts.length === 0) {
-                productsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #666; padding: 40px;">Nie znaleziono produktów spełniających kryteria.</p>';
+                productsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--muted-text-color); padding: 40px;">Nie znaleziono produktów spełniających kryteria.</p>';
                 return;
             }
 
@@ -639,12 +670,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <div style="max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
                 <h1 style="text-align: center; margin-bottom: 40px;">Informacje o wysyłce 📦</h1>
                 
-                <div class="shipping-info-box" style="margin-bottom: 50px; text-align: center; padding: 20px; background: #f0f8ff; border-radius: 15px; border: 1px solid #d1e7dd; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <div class="shipping-info-box" style="margin-bottom: 50px; text-align: center; padding: 20px; background: #f0f8ff; border-radius: 15px; border: 1px solid #d1e7dd; max-width: 550px; margin-left: auto; margin-right: auto;">
                     <h3 style="color: #0f5132; margin-bottom: 15px;">⏱️ Czas realizacji</h3>
                     <p style="font-size: 1.1rem; margin-bottom: 5px;"><strong>Standardowe breloki:</strong> wysyłka w 24h</p>
                     <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Breloki customowe:</strong> wysyłka do 48h</p>
                     
-                    <div style="border-top: 1px solid #d1e7dd; margin: 10px 40px; padding-top: 15px;">
+                    <div style="border-top: 1px solid #d1e7dd; margin: 10px; padding-top: 15px;">
                         <p style="font-size: 1.1rem;"><strong>📍 Odbiór osobisty:</strong> Wrocław</p>
                         <p style="font-size: 0.9rem; color: #555">(po wcześniejszym umówieniu)</p>
                     </div>
@@ -665,6 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <li>✅ DPD Kurier & Paczkomat</li>
                             <li>✅ DHL Kurier & Paczkomat</li>
                             <li>✅ UPS Kurier & Paczkomat</li>
+                            <li>✅ GLS Kurier & Paczkomat</li>
                             <li>✅ Pocztex Kurier & Paczkomat</li>
                         </ul>
                     </div>
@@ -680,7 +712,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <li>✅ Poczta Polska MiniPaczka</li>
                             <li>✅ ORLEN Paczka</li>
                             <li>✅ DPD Kurier</li>
-                            <li class="disabled">❌ DHL, UPS, Pocztex</li>
+                            <li class="disabled">❌ DHL, UPS, GLS, Pocztex</li>
                         </ul>
                     </div>
 
