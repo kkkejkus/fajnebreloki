@@ -343,6 +343,21 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     },
     {
+        "id": "gorillaz-song-machine",
+        "artist": "Gorillaz",
+        "album": "Song Machine",
+        "price": 35.0,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/gorillaz - song machine/brelok1.jpg",
+            "media/gorillaz - song machine/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+    },
+    {
         "id": "harry-styles-fine-line",
         "artist": "Harry Styles",
         "album": "Fine Line",
@@ -1126,4 +1141,3 @@
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
     }
 ]
-
