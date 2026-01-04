@@ -1,6 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const app = document.getElementById('app');
 
+    const navSearchContainer = document.getElementById('navSearchContainer');
+    const setNavSearchVisible = (isVisible) => {
+        if (!navSearchContainer) return;
+        navSearchContainer.style.display = isVisible ? 'flex' : 'none';
+    };
+
+    // Set initial visibility ASAP to avoid flicker on page reloads.
+    const initialParams = new URLSearchParams(window.location.search);
+    setNavSearchVisible(!initialParams.get('page') && !initialParams.get('id'));
+
     // Theme Logic
     const themeToggleBtn = document.getElementById('themeToggle');
     const body = document.body;
@@ -33,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Global Filter State
-    window.currentCategoryFilter = 'ALL'; // ALL, POLISH, FOREIGN, ARTIST
+    window.currentCategoryFilter = 'ALL'; // ALL, POLISH, FOREIGN, GENRE, ARTIST
     window.currentCategoryValue = null;
     window.currentInputLabel = null;
 
@@ -62,8 +72,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 const allCount = products.filter(p => !p.isCustom).length;
                 const polishCount = products.filter(p => !p.isCustom && p.isPolish).length;
                 const foreignCount = products.filter(p => !p.isCustom && !p.isPolish).length;
-                
-                const artists = [...new Set(products.map(p => p.artist).filter(a => a && a !== 'Custom'))].sort();
+
+                const extractArtists = (p) => {
+                    if (!p || p.isCustom) return [];
+                    const a = p.artist;
+                    if (!a || a === 'Custom') return [];
+                    return String(a)
+                        .split('&')
+                        .map(x => String(x).trim())
+                        .filter(Boolean);
+                };
+
+                const artists = [...new Set(products.flatMap(extractArtists))]
+                    .sort((a, b) => a.localeCompare(b, 'pl', { sensitivity: 'base' }));
+
+                const extractGenres = (p) => {
+                    if (!p || p.isCustom) return [];
+                    const g = p.genre;
+                    if (!g) return [];
+                    if (Array.isArray(g)) return g.filter(Boolean).map(x => String(x).trim()).filter(Boolean);
+                    return [String(g).trim()].filter(Boolean);
+                };
+
+                const genres = [...new Set(
+                    products.flatMap(extractGenres)
+                )].sort((a, b) => a.localeCompare(b, 'pl', { sensitivity: 'base' }));
                 
                 // Helper to create link
                 const createLink = (text, filterType, filterValue, isSpecial = false, inputLabel = null) => {
@@ -106,16 +139,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 artistList.appendChild(createLink(`WSZYSTKIE (${allCount})`, 'ALL', null, true, ''));
                 artistList.appendChild(createLink(`POLSKIE (${polishCount})`, 'POLISH', null, true, 'Polskie albumy'));
                 artistList.appendChild(createLink(`ZAGRANICZNE (${foreignCount})`, 'FOREIGN', null, true, 'Zagraniczne albumy'));
-                
+
+                const divider = () => {
+                    const d = document.createElement('div');
+                    d.style.borderTop = "1px solid #eee";
+                    d.style.margin = "5px 0";
+                    return d;
+                };
+
                 // Divider
-                const divider = document.createElement('div');
-                divider.style.borderTop = "1px solid #eee";
-                divider.style.margin = "5px 0";
-                artistList.appendChild(divider);
+                artistList.appendChild(divider());
+
+                // Genres section (between special options and artists)
+                if (genres.length > 0) {
+                    genres.forEach(genre => {
+                        const count = products.filter(p => !p.isCustom && extractGenres(p).includes(genre)).length;
+                        artistList.appendChild(createLink(`${genre} (${count})`, 'GENRE', genre, true, genre));
+                    });
+
+                    artistList.appendChild(divider());
+                }
 
                 // Add Artists
                 artists.forEach(artist => {
-                    const count = products.filter(p => p.artist === artist && !p.isCustom).length;
+                    const count = products.filter(p => !p.isCustom && extractArtists(p).includes(artist)).length;
                     artistList.appendChild(createLink(`${artist} (${count})`, 'ARTIST', artist, false, artist));
                 });
             }
@@ -174,8 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funkcja renderująca stronę kontaktową
     function renderContactPage() {
-        const navSearchContainer = document.getElementById('navSearchContainer');
-        if (navSearchContainer) navSearchContainer.style.display = 'none';
+        setNavSearchVisible(false);
 
         document.title = 'Kontakt - FajneBreloki.pl';
         app.innerHTML = `
@@ -212,9 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funkcja renderująca stronę główną
     function renderLandingPage(products) {
-        // Show nav search container
-        const navSearchContainer = document.getElementById('navSearchContainer');
-        if (navSearchContainer) navSearchContainer.style.display = 'flex';
+        setNavSearchVisible(true);
 
         // 2. Renderuj szkielet strony (Hero + Grid Container)
         const html = `
@@ -354,24 +398,72 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Determine if product matches the category filter
                 let matchesCategory = true;
+
+                const extractGenres = (product) => {
+                    if (!product || product.isCustom) return [];
+                    const g = product.genre;
+                    if (!g) return [];
+                    if (Array.isArray(g)) return g.filter(Boolean).map(x => String(x).trim()).filter(Boolean);
+                    return [String(g).trim()].filter(Boolean);
+                };
+
+                const extractArtists = (product) => {
+                    if (!product || product.isCustom) return [];
+                    const a = product.artist;
+                    if (!a || a === 'Custom') return [];
+                    return String(a)
+                        .split('&')
+                        .map(x => String(x).trim())
+                        .filter(Boolean);
+                };
                 
                 if (filterType === 'POLISH') {
                     matchesCategory = p.isPolish === true;
                 } else if (filterType === 'FOREIGN') {
                     matchesCategory = p.isPolish === false;
+                } else if (filterType === 'GENRE') {
+                    matchesCategory = extractGenres(p).includes(filterValue);
                 } else if (filterType === 'ARTIST') {
-                    matchesCategory = p.artist === filterValue;
+                    matchesCategory = extractArtists(p).includes(filterValue);
                 }
 
                 // Wyszukiwanie po nazwie (name) lub artyście
                 let term = searchTerm.toLowerCase();
+
+                const normalizeKey = (s) => String(s || '')
+                    .toLocaleLowerCase('pl')
+                    .replace(/[^\p{L}\p{N}]+/gu, '');
+
+                const termKey = normalizeKey(term);
                 
                 // Ignore search term if it matches the current category label (display only)
                 if (window.currentInputLabel && term === window.currentInputLabel.toLowerCase()) {
                     term = '';
                 }
 
-                const matchesSearch = p.name.toLowerCase().includes(term) || p.artist.toLowerCase().includes(term);
+                const matchesSpecialSearch = (() => {
+                    // Allow typing the same terms as the category shortcuts.
+                    if (!termKey) return true;
+                    if (termKey.startsWith('polsk')) return p.isPolish === true;
+                    if (termKey.startsWith('zagraniczn')) return p.isPolish === false;
+                    if (termKey.startsWith('wszystk')) return true;
+                    return null;
+                })();
+
+                const matchesGenreSearch = (() => {
+                    if (!termKey) return true;
+                    return extractGenres(p).some(g => normalizeKey(g) === termKey);
+                })();
+
+                const matchesTextSearch =
+                    p.name.toLowerCase().includes(term) ||
+                    p.artist.toLowerCase().includes(term) ||
+                    extractArtists(p).some(a => a.toLowerCase().includes(term));
+
+                const matchesSearch =
+                    (matchesSpecialSearch !== null ? matchesSpecialSearch : false) ||
+                    matchesGenreSearch ||
+                    matchesTextSearch;
                 
                 return matchesCategory && matchesSearch;
             });
@@ -464,8 +556,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funkcja renderująca szczegóły produktu
     function renderProductDetail(id, products) {
-        const navSearchContainer = document.getElementById('navSearchContainer');
-        if (navSearchContainer) navSearchContainer.style.display = 'none';
+        setNavSearchVisible(false);
 
         const product = products.find(p => p.id === id);
 
@@ -662,8 +753,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funkcja renderująca stronę wysyłki
     function renderShippingPage() {
-        const navSearchContainer = document.getElementById('navSearchContainer');
-        if (navSearchContainer) navSearchContainer.style.display = 'none';
+        setNavSearchVisible(false);
 
         document.title = 'Wysyłka - FajneBreloki.pl';
         app.innerHTML = `
@@ -735,8 +825,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funkcja renderująca stronę FAQ
     function renderFaqPage() {
-        const navSearchContainer = document.getElementById('navSearchContainer');
-        if (navSearchContainer) navSearchContainer.style.display = 'none';
+        setNavSearchVisible(false);
 
         document.title = 'FAQ - FajneBreloki.pl';
         app.innerHTML = `
@@ -809,8 +898,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderPrivacyPage() {
-        const navSearchContainer = document.getElementById('navSearchContainer');
-        if (navSearchContainer) navSearchContainer.style.display = 'none';
+        setNavSearchVisible(false);
 
         document.title = 'Polityka Prywatności - FajneBreloki.pl';
         app.innerHTML = `
