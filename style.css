@@ -71,6 +71,15 @@ body {
     align-items: center;
 }
 
+/*
+   Prevent a brief flicker of the search + categories when loading subpages
+   (index.html?page=... / index.html?id=...). JS will enable it only on the
+   landing page.
+*/
+#navSearchContainer {
+    display: none;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
