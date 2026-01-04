@@ -3,7 +3,7 @@
         "id": "custom-brelok",
         "name": "PERSONALIZOWANY ALBUM ✨",
         "artist": "Custom",
-        "price": 39.0,
+        "price": 39,
         "promoPrice": 33.99,
         "isCustom": true,
         "description": "Marzy Ci się <u>brelok z Twoim ulubionym</u>, niszowym albumem? A może chcesz sprawić komuś wyjątkowy prezent? <strong>Zamów brelok na wymiar!</strong>\n\n🎶 Ręcznie stworzony brelok (5cm×4.5cm×0.8cm) z okładką wybranego przez Ciebie albumu.\n💿 Wyposażony w chip NFC, który po zbliżeniu telefonu automatycznie otwiera album w Spotify.\n📱 W wiadomości przy zakupie możesz wskazać inną aplikację — np. Apple Music.\n\n📀 Jeśli interesuje cię konkretny album, sprawdź pozostałe oferty — być może jest już dostępny!\n💰 Przy zakupie kilku breloków <b>duża promka!</b>\n\n📝 <u>Wypełnij formularz</u> poniżej, a odezwę się do Ciebie ze szczegółami!",
@@ -13,55 +13,11 @@
         ]
     },
     {
-        "id": "ariana-grande-eternal-sunshine",
-        "artist": "Ariana Grande",
-        "album": "Eternal Sunshine",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/ariana grande - eternal sunshine/brelok1.jpg",
-            "media/ariana grande - eternal sunshine/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
-    },
-    {
-        "id": "ariana-grande-positions",
-        "artist": "Ariana Grande",
-        "album": "Positions",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/ariana grande - positions/brelok1.jpg",
-            "media/ariana grande - positions/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
-    },
-    {
-        "id": "ariana-grande-thank-u-next",
-        "artist": "Ariana Grande",
-        "album": "thank u. next",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/ariana grande - thank u. next/brelok1.jpg",
-            "media/ariana grande - thank u. next/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
-    },
-    {
         "id": "asap-rocky-at-long-last-asap",
         "artist": "A$AP Rocky",
         "album": "At. Long. Last. A$AP",
-        "price": 35.0,
+        "genre": "HIP-HOP",
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -76,7 +32,7 @@
         "id": "asap-rocky-live-love-asap",
         "artist": "A$AP Rocky",
         "album": "Live. Love. A$AP",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -85,13 +41,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "asap-rocky-long-live-asap",
         "artist": "A$AP Rocky",
         "album": "Long. Live. A$AP",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -100,13 +57,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "asap-rocky-testing",
         "artist": "A$AP Rocky",
         "album": "Testing",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -115,13 +73,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "addison-rae-addison",
         "artist": "Addison Rae",
         "album": "Addison",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -130,13 +89,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "arctic-monkeys-am",
         "artist": "Arctic Monkeys",
         "album": "AM",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -145,13 +105,94 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "ariana-grande-eternal-sunshine",
+        "artist": "Ariana Grande",
+        "album": "Eternal Sunshine",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ariana grande - eternal sunshine/brelok1.jpg",
+            "media/ariana grande - eternal sunshine/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "ariana-grande-positions",
+        "artist": "Ariana Grande",
+        "album": "Positions",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ariana grande - positions/brelok1.jpg",
+            "media/ariana grande - positions/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "ariana-grande-thank-u-next",
+        "artist": "Ariana Grande",
+        "album": "thank u. next",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ariana grande - thank u. next/brelok1.jpg",
+            "media/ariana grande - thank u. next/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "bad-bunny-debi-tirar-mas-fotos",
+        "artist": "Bad Bunny",
+        "album": "Debi Tirar Mas Fotos",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/bad bunny - debi tirar mas fotos/brelok1.jpg",
+            "media/bad bunny - debi tirar mas fotos/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "bad-bunny-un-verano-sin-ti",
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/bad bunny - un verano sin ti/brelok1.jpg",
+            "media/bad bunny - un verano sin ti/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "billie-eilish-happier-than-ever",
         "artist": "Billie Eilish",
         "album": "Happier Than Ever",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -160,13 +201,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "billie-eilish-hit-me-hard-and-soft",
         "artist": "Billie Eilish",
         "album": "Hit Me Hard and Soft",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -175,13 +217,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "billie-eilish-when-we-all-fall-asleep",
         "artist": "Billie Eilish",
         "album": "When We All Fall Asleep, Where Do We Go?",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -190,13 +233,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "charli-xcx-brat",
         "artist": "Charli XCX",
         "album": "Brat",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -205,13 +249,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "chase-atlantic-self-titled",
         "artist": "Chase Atlantic",
         "album": "Chase Atlantic (Self Titled)",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -220,13 +265,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "drake-nothing-was-the-same",
         "artist": "Drake",
         "album": "Nothing Was the Same (Deluxe)",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -235,13 +281,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "drake-scorpion",
         "artist": "Drake",
         "album": "Scorpion",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -250,13 +297,30 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "drake-take-care",
+        "artist": "Drake",
+        "album": "Take Care",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/drake - take care/brelok1.jpg",
+            "media/drake - take care/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "drake-views",
         "artist": "Drake",
         "album": "Views",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -265,43 +329,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
-    },
-    {
-        "id": "dua-lipa-future-nostalgia",
-        "artist": "Dua Lipa",
-        "album": "Future Nostalgia",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/dua lipa - future nostalgia/brelok1.jpg",
-            "media/dua lipa - future nostalgia/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
-    },
-    {
-        "id": "dua-lipa-radical-optimism",
-        "artist": "Dua Lipa",
-        "album": "Radical Optimism",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/dua lipa - radical optimism/brelok1.jpg",
-            "media/dua lipa - radical optimism/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "dua-lipa-self-titled",
         "artist": "Dua Lipa",
         "album": "Dua Lipa (Self Titled)",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -310,13 +345,46 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "dua-lipa-future-nostalgia",
+        "artist": "Dua Lipa",
+        "album": "Future Nostalgia",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/dua lipa - future nostalgia/brelok1.jpg",
+            "media/dua lipa - future nostalgia/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "dua-lipa-radical-optimism",
+        "artist": "Dua Lipa",
+        "album": "Radical Optimism",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/dua lipa - radical optimism/brelok1.jpg",
+            "media/dua lipa - radical optimism/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "eazy-e-eazy-duz-it",
         "artist": "Eazy-E",
         "album": "Eazy-Duz-It",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -325,13 +393,78 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "future-ds2",
+        "artist": "Future",
+        "album": "DS2",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/future - ds2/brelok1.jpg",
+            "media/future - ds2/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "future-monster",
+        "artist": "Future",
+        "album": "Monster",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/future - monster/brelok1.jpg",
+            "media/future - monster/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "future-metro-boomin-wdty",
+        "artist": "Future & Metro Boomin",
+        "album": "We Don't Trust You",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/future & metro boomin - wdty/brelok1.jpg",
+            "media/future & metro boomin - wdty/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "future-metro-boomin-wsdty",
+        "artist": "Future & Metro Boomin",
+        "album": "We Still Don't Trust You",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/future & metro boomin - wsdty/brelok1.jpg",
+            "media/future & metro boomin - wsdty/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "gorillaz-demon-days",
         "artist": "Gorillaz",
         "album": "Demon Days",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -340,13 +473,30 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
+        "id": "gorillaz-self-titled",
+        "artist": "Gorillaz",
+        "album": "Gorillaz (Self Titled)",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/gorillaz - self titled/brelok1.jpg",
+            "media/gorillaz - self titled/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
     },
     {
         "id": "gorillaz-song-machine",
         "artist": "Gorillaz",
         "album": "Song Machine",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -355,13 +505,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
     },
     {
         "id": "harry-styles-fine-line",
         "artist": "Harry Styles",
         "album": "Fine Line",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -370,13 +521,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "harry-styles-harrys-house",
         "artist": "Harry Styles",
         "album": "Harry's House",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -385,13 +537,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "illit-not-cute-anymore",
         "artist": "Illit",
         "album": "Not Cute Anymore",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -400,13 +553,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "K-POP"
     },
     {
         "id": "kanye-west-808s-heartbreak",
         "artist": "Kanye West",
         "album": "808s & Heartbreak",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -415,13 +569,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "kanye-west-graduation",
         "artist": "Kanye West",
         "album": "Graduation",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -430,28 +585,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
-    },
-    {
-        "id": "kanye-west-kids-see-ghosts",
-        "artist": "Kanye West & Kid Cudi",
-        "album": "Kids See Ghosts",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/kid cudi & kanye west - kids see ghosts/brelok1.jpg",
-            "media/kid cudi & kanye west - kids see ghosts/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "kanye-west-mbdtf",
         "artist": "Kanye West",
         "album": "My Beautiful Dark Twisted Fantasy",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -460,13 +601,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "kanye-west-college-dropout",
         "artist": "Kanye West",
         "album": "The College Dropout",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -475,13 +617,30 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "kanye-west-kids-see-ghosts",
+        "artist": "Kanye West & Kid Cudi",
+        "album": "Kids See Ghosts",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/kid cudi & kanye west - kids see ghosts/brelok1.jpg",
+            "media/kid cudi & kanye west - kids see ghosts/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "katseye-beautiful-chaos",
         "artist": "Katseye",
         "album": "Beautiful Chaos",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -490,13 +649,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "K-POP"
     },
     {
         "id": "ken-carson-a-great-chaos",
         "artist": "Ken Carson",
         "album": "A Great Chaos",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -505,13 +665,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "ken-carson-more-chaos",
         "artist": "Ken Carson",
         "album": "More Chaos",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -520,13 +681,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "kendrick-lamar-damn",
         "artist": "Kendrick Lamar",
         "album": "DAMN.",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -535,13 +697,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "kendrick-lamar-gnx",
         "artist": "Kendrick Lamar",
         "album": "GNX",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -550,13 +713,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "kendrick-lamar-gkmc",
         "artist": "Kendrick Lamar",
         "album": "good kid, m.A.A.d city",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -565,13 +729,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "kendrick-lamar-mr-morale",
         "artist": "Kendrick Lamar",
         "album": "Mr. Morale & The Big Steppers",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -580,13 +745,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "kendrick-lamar-tpab",
         "artist": "Kendrick Lamar",
         "album": "To Pimp a Butterfly",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -595,13 +761,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "mata-100-dni-do-matury",
         "artist": "Mata",
         "album": "100 dni do matury",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": true,
         "images": [
@@ -610,13 +777,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "mata-2039-zlote-piaski",
         "artist": "Mata",
         "album": "2039 Złote Piaski",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": true,
         "images": [
@@ -625,13 +793,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "mata-mlody-matczak",
         "artist": "Mata",
         "album": "Młody Matczak",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": true,
         "images": [
@@ -640,13 +809,30 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "metro-boomin-heroes-and-villains",
+        "artist": "Metro Boomin",
+        "album": "Heroes & Villains",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/metro boomin - heroes & villains/brelok1.jpg",
+            "media/metro boomin - heroes & villains/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "michael-jackson-invincible",
         "artist": "Michael Jackson",
         "album": "Invincible",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -655,28 +841,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
-    },
-    {
-        "id": "michael-jackson-thriller",
-        "artist": "Michael Jackson",
-        "album": "Thriller",
-        "price": 35.0,
-        "promoPrice": 30.99,
-        "isPolish": false,
-        "images": [
-            "media/michael jackson - thriller/brelok1.jpg",
-            "media/michael jackson - thriller/brelok2.jpg"
-        ],
-        "vintedUrl": "https://www.vinted.pl/member/91825259",
-        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "michael-jackson-michael",
         "artist": "Michael Jackson",
         "album": "Michael",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -685,13 +857,62 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "michael-jackson-thriller",
+        "artist": "Michael Jackson",
+        "album": "Thriller",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/michael jackson - thriller/brelok1.jpg",
+            "media/michael jackson - thriller/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "nerd-fly-or-die",
+        "artist": "N.E.R.D",
+        "album": "Fly or Die",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/nerd - fly or die/brelok1.jpg",
+            "media/nerd - fly or die/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
+        "id": "nirvana-nevermind",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/nirvana - nevermind/brelok1.jpg",
+            "media/nirvana - nevermind/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
     },
     {
         "id": "olivia-rodrigo-guts",
         "artist": "Olivia Rodrigo",
         "album": "GUTS",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -700,13 +921,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "olivia-rodrigo-sour",
         "artist": "Olivia Rodrigo",
         "album": "SOUR",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -715,13 +937,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "pbc-die-lit",
         "artist": "Playboi Carti",
         "album": "Die Lit",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -730,13 +953,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "pbc-music",
         "artist": "Playboi Carti",
         "album": "MUSIC",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -745,13 +969,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "pbc-self-titled",
         "artist": "Playboi Carti",
         "album": "Playboi Carti (Self Titled)",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -760,13 +985,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "pbc-whole-lotta-red",
         "artist": "Playboi Carti",
         "album": "Whole Lotta Red",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -775,13 +1001,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "raye-my-21st-century-blues",
         "artist": "RAYE",
         "album": "My 21st Century Blues",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -790,13 +1017,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "sabrina-carpenter-mans-best-friend",
         "artist": "Sabrina Carpenter",
         "album": "Man's Best Friend",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -805,13 +1033,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "sabrina-carpenter-short-n-sweet",
         "artist": "Sabrina Carpenter",
         "album": "Short n' Sweet",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -820,13 +1049,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "sza-sos",
         "artist": "SZA",
         "album": "SOS",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -835,13 +1065,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "tame-impala-currents",
         "artist": "Tame Impala",
         "album": "Currents",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -850,13 +1081,30 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "tame-impala-deadbeat",
+        "artist": "Tame Impala",
+        "album": "Deadbeat",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/tame impala - deadbeat/brelok1.jpg",
+            "media/tame impala - deadbeat/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "tame-impala-the-slow-rush",
         "artist": "Tame Impala",
         "album": "The Slow Rush",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -865,13 +1113,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "tate-mcrae-so-close-to-what",
         "artist": "Tate McRae",
         "album": "So Close To What",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -880,13 +1129,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "tate-mcrae-think-later",
         "artist": "Tate McRae",
         "album": "Think Later",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -895,13 +1145,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "taylor-swift-1989-tv",
         "artist": "Taylor Swift",
         "album": "1989 (Taylor's Version)",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -910,13 +1161,30 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "taylor-swift-lover",
+        "artist": "Taylor Swift",
+        "album": "Lover",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/taylor swift - lover/brelok1.jpg",
+            "media/taylor swift - lover/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "taylor-swift-the-life-of-a-showgirl",
         "artist": "Taylor Swift",
         "album": "The Life of a Showgirl",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -925,13 +1193,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "the-weeknd-after-hours",
         "artist": "The Weeknd",
         "album": "After Hours",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "bestseller": true,
@@ -941,13 +1210,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "the-weeknd-beauty-behind-the-madness",
         "artist": "The Weeknd",
         "album": "Beauty Behind The Madness",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -956,13 +1226,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "the-weeknd-starboy",
         "artist": "The Weeknd",
         "album": "Starboy",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -971,13 +1242,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "travis-scott-astroworld",
         "artist": "Travis Scott",
         "album": "Astroworld",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "bestseller": true,
@@ -987,13 +1259,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "travis-scott-rodeo",
         "artist": "Travis Scott",
         "album": "Rodeo",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1002,13 +1275,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "travis-scott-utopia",
         "artist": "Travis Scott",
         "album": "Utopia",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "bestseller": true,
@@ -1018,13 +1292,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "tv-girl-who-really-cares",
         "artist": "TV Girl",
         "album": "Who Really Cares",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1033,13 +1308,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "tyla-tyla",
         "artist": "Tyla",
         "album": "Tyla (Self Titled)",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1048,13 +1324,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "tyler-cmiygl",
         "artist": "Tyler, The Creator",
         "album": "Call Me If You Get Lost",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1063,13 +1340,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "tyler-chromakopia",
         "artist": "Tyler, The Creator",
         "album": "Chromakopia",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1078,13 +1356,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "tyler-dttg",
         "artist": "Tyler, The Creator",
         "album": "Don't Tap The Glass",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1093,13 +1372,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "tyler-flower-boy",
         "artist": "Tyler, The Creator",
         "album": "Flower Boy",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1108,13 +1388,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "tyler-igor",
         "artist": "Tyler, The Creator",
         "album": "IGOR",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1123,13 +1404,14 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "whitechapel-kin",
         "artist": "Whitechapel",
         "album": "Kin",
-        "price": 35.0,
+        "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
@@ -1138,6 +1420,7 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
     }
 ]
