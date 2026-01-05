@@ -1,6 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const app = document.getElementById('app');
 
+    const trackGaPageView = () => {
+        if (typeof window.gtag !== 'function') return;
+        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        window.gtag('event', 'page_view', {
+            page_location: window.location.href,
+            page_path: window.location.pathname + window.location.search,
+            page_title: document.title,
+            ...(isLocalhost ? { debug_mode: true } : {}),
+        });
+    };
+
     const navSearchContainer = document.getElementById('navSearchContainer');
     const setNavSearchVisible = (isVisible) => {
         if (!navSearchContainer) return;
@@ -254,11 +265,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+
+        trackGaPageView();
     }
 
     // Funkcja renderująca stronę główną
     function renderLandingPage(products) {
         setNavSearchVisible(true);
+
+        document.title = 'FajneBreloki.pl';
 
         // 2. Renderuj szkielet strony (Hero + Grid Container)
         const html = `
@@ -285,6 +300,8 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         app.innerHTML = html;
+
+        trackGaPageView();
 
         // 3. Logika filtrowania
         const productsGrid = document.getElementById('productsGrid');
@@ -821,6 +838,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+
+        trackGaPageView();
+
+        trackGaPageView();
     }
 
     // Funkcja renderująca stronę FAQ
@@ -895,6 +916,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+
+        trackGaPageView();
     }
 
     function renderPrivacyPage() {
@@ -951,6 +974,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+
+        trackGaPageView();
     }
 });
 
