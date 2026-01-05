@@ -931,15 +931,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 <section style="margin-bottom: 30px;">
                     <h2>1. Informacje ogólne</h2>
                     <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazanych przez Użytkowników w związku z korzystaniem ze strony internetowej FajneBreloki.pl.</p>
-                    <p>Administratorem danych osobowych jest właściciel serwisu FajneBreloki.pl (kontakt poprzez formularz kontaktowy).</p>
+                    <p>Administratorem danych osobowych jest właściciel serwisu FajneBreloki.pl. Kontakt: <a href="mailto:kamiljama@gmail.com" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">kamiljama@gmail.com</a>.</p>
                 </section>
 
                 <section style="margin-bottom: 30px;">
                     <h2>2. Jakie dane zbieramy?</h2>
                     <p>Podczas korzystania z naszej strony możemy zbierać następujące dane:</p>
                     <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
-                        <li><strong>Dane kontaktowe:</strong> adres e-mail oraz treść wiadomości (w przypadku skorzystania z formularza kontaktowego).</li>
-                        <li><strong>Dane techniczne:</strong> informacje o preferencjach wyświetlania strony (tryb jasny/ciemny) zapisywane w pamięci przeglądarki (LocalStorage).</li>
+                        <li><strong>Dane kontaktowe:</strong> adres e-mail oraz treść wiadomości (gdy kontaktujesz się z nami e-mailem lub przez wskazane kanały kontaktu).</li>
+                        <li><strong>Dane techniczne:</strong> informacje o urządzeniu i przeglądarce, przybliżona lokalizacja, źródło wejścia, odsłony i sposób korzystania ze strony (dane analityczne).</li>
+                        <li><strong>Dane o preferencjach:</strong> informacje o preferencjach wyświetlania strony (np. tryb jasny/ciemny) zapisywane w pamięci przeglądarki (LocalStorage).</li>
                     </ul>
                 </section>
 
@@ -949,24 +950,55 @@ document.addEventListener('DOMContentLoaded', () => {
                     <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
                         <li>Udzielenia odpowiedzi na przesłane zapytania.</li>
                         <li>Realizacji zamówień (w przypadku kontaktu bezpośredniego).</li>
-                        <li>Zapewnienia prawidłowego działania strony (zapamiętanie wybranego motywu).</li>
+                        <li>Zapewnienia prawidłowego działania strony (np. zapamiętanie wybranego motywu).</li>
+                        <li>Prowadzenia statystyk i analizy ruchu na stronie, aby ulepszać serwis i treści.</li>
                     </ul>
                 </section>
 
                 <section style="margin-bottom: 30px;">
-                    <h2>4. Pliki Cookies i LocalStorage</h2>
-                    <p>Strona nie używa śledzących plików cookies (tracking cookies) ani narzędzi analitycznych firm trzecich (np. Google Analytics).</p>
-                    <p>Wykorzystujemy jedynie mechanizm <strong>LocalStorage</strong> do zapamiętania Twoich preferencji dotyczących wyglądu strony (tryb jasny/ciemny). Dane te są przechowywane wyłącznie na Twoim urządzeniu i nie są nigdzie przesyłane.</p>
+                    <h2>4. Narzędzia analityczne (Google Analytics 4)</h2>
+                    <p>Na stronie korzystamy z narzędzia analitycznego <strong>Google Analytics 4</strong>, które pomaga nam zrozumieć, jak Użytkownicy korzystają z serwisu (np. które podstrony są najczęściej odwiedzane, z jakich urządzeń i źródeł ruchu).</p>
+                    <p>Dostawcą usługi jest co do zasady <strong>Google Ireland Limited</strong> (a w ramach grupy Google dane mogą być przetwarzane również przez <strong>Google LLC</strong>).</p>
+                    <p>W ramach analityki mogą być przetwarzane dane techniczne, takie jak identyfikatory online (np. pliki cookies), przybliżona lokalizacja, typ urządzenia, przeglądarka, adresy URL, informacje o interakcjach oraz czas wizyt.</p>
                 </section>
 
                 <section style="margin-bottom: 30px;">
-                    <h2>5. Udostępnianie danych</h2>
-                    <p>Twoje dane nie są sprzedawane ani udostępniane podmiotom trzecim, chyba że jest to niezbędne do realizacji zamówienia (np. firmy kurierskie, platformy sprzedażowe typu Vinted/OLX) lub wynika z obowiązku prawnego.</p>
+                    <h2>5. Pliki cookies i LocalStorage</h2>
+                    <p>Strona może wykorzystywać pliki <strong>cookies</strong> związane z działaniem narzędzi analitycznych (Google Analytics 4). Możesz ograniczyć lub zablokować cookies w ustawieniach swojej przeglądarki albo korzystać z dodatków blokujących śledzenie (np. uBlock Origin).</p>
+                    <p>Wykorzystujemy również mechanizm <strong>LocalStorage</strong> do zapamiętania Twoich preferencji dotyczących wyglądu strony (tryb jasny/ciemny). Dane te są przechowywane na Twoim urządzeniu.</p>
+                    <p>Więcej informacji o tym, jak Google przetwarza dane: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">policies.google.com/privacy</a>.</p>
                 </section>
 
                 <section style="margin-bottom: 30px;">
-                    <h2>6. Twoje prawa</h2>
-                    <p>Masz prawo do wglądu w swoje dane, ich poprawiania, żądania usunięcia lub ograniczenia przetwarzania. W tym celu skontaktuj się z nami poprzez formularz kontaktowy.</p>
+                    <h2>6. Udostępnianie danych</h2>
+                    <p>Twoje dane nie są sprzedawane. Mogą być udostępniane podmiotom trzecim wyłącznie wtedy, gdy jest to niezbędne do działania strony lub realizacji zamówienia, w szczególności:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                        <li>dostawcom usług analitycznych (Google Analytics 4 / Google),</li>
+                        <li>platformom sprzedażowym i usługom, z których korzystasz przy zakupie (np. Vinted/OLX/Allegro),</li>
+                        <li>podmiotom obsługującym wysyłkę (np. firmy kurierskie) – w zakresie niezbędnym do realizacji zamówienia,</li>
+                        <li>organom publicznym – jeśli wymagają tego przepisy prawa.</li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>7. Przekazywanie danych poza EOG</h2>
+                    <p>W związku z korzystaniem z usług Google, dane mogą być przekazywane do państw poza Europejski Obszar Gospodarczy (np. do USA). Google stosuje mechanizmy prawne przewidziane przez przepisy ochrony danych (np. standardowe klauzule umowne), aby zapewnić odpowiedni poziom ochrony.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>8. Okres przechowywania danych</h2>
+                    <p>Dane kontaktowe przechowujemy przez czas potrzebny do obsługi korespondencji oraz ewentualnych roszczeń. Dane analityczne w Google Analytics 4 są przechowywane zgodnie z konfiguracją ustawień retencji w GA4.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>9. Twoje prawa</h2>
+                    <p>Masz prawo do wglądu w swoje dane, ich sprostowania, żądania usunięcia lub ograniczenia przetwarzania, a także prawo wniesienia sprzeciwu – w granicach przewidzianych przepisami.</p>
+                    <p>W sprawach związanych z ochroną danych skontaktuj się z nami: <a href="mailto:kamiljama@gmail.com" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">kamiljama@gmail.com</a>. Masz również prawo złożyć skargę do Prezesa UODO.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>10. Zmiany w polityce</h2>
+                    <p>Możemy aktualizować niniejszą Politykę Prywatności w razie zmian na stronie lub w przepisach. Ostatnia aktualizacja: 05.01.2026.</p>
                 </section>
 
                 <div style="text-align: center; margin-top: 50px;">
