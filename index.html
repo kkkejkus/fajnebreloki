@@ -9,12 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/media/icon.png">
     <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HSNRQ9VFB"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // SPA-ish routing: page_view is sent manually from script.js
+    gtag('config', 'G-6HSNRQ9VFB', { send_page_view: false });
+    </script>
 </head>
 <body>
 
     <div class="promo-banner">
-        <div>🎄 Świąteczna Promocja! Wszystkie breloki przecenione z <span style="text-decoration: line-through; opacity: 0.8;">45.00 zł</span>! 🎄</div>
-        <div style="font-size: 0.8em; opacity: 0.9;">🎁 -15% przy zakupie dwóch, -25% przy trzech! 🎁</div>
+        <div>💰 Rabat <span style="font-weight: 800">-5%</span> za odwiedzenie strony 💰</div>
+        <div style="font-size: 0.8em; opacity: 0.9;">🏷️ Przy zakupie wspomnij, że byłeś/aś na naszej stronie 🏷️</div>
     </div>
 
     <nav class="navbar">
