@@ -189,6 +189,22 @@
         "genre": "POP"
     },
     {
+        "id": "bedeos-lanek-opowiesci",
+        "artist": "Bedeos & Lanek",
+        "album": "Opowieści z Doliny Smoków",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/bedeos & lanek - opowiesci z doliny smokow/brelok1.jpg",
+            "media/bedeos & lanek - opowiesci z doliny smokow/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "billie-eilish-happier-than-ever",
         "artist": "Billie Eilish",
         "album": "Happier Than Ever",
@@ -765,6 +781,22 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "malik-montana-import-export",
+        "artist": "Malik Montana",
+        "album": "Import/Export",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/malik montana - import export/brelok1.jpg",
+            "media/malik montana - import export/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "mata-100-dni-do-matury",
         "artist": "Mata",
         "album": "100 dni do matury",
@@ -939,6 +971,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "POP"
+    },
+    {
+        "id": "paktofonika-kinematografia",
+        "artist": "Paktofonika",
+        "album": "Kinematografia",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/paktofonika - kinematografia/brelok1.jpg",
+            "media/paktofonika - kinematografia/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "pbc-die-lit",
