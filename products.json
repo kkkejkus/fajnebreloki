@@ -189,8 +189,8 @@
         "genre": "POP"
     },
     {
-        "id": "bedeos-lanek-opowiesci",
-        "artist": "Bedeos & Lanek",
+        "id": "bedoes-lanek-opowiesci",
+        "artist": "Bedoes & Lanek",
         "album": "Opowieści z Doliny Smoków",
         "price": 35,
         "promoPrice": 30.99,
@@ -278,6 +278,22 @@
         "images": [
             "media/chase atlantic - self titled/brelok1.jpg",
             "media/chase atlantic - self titled/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "childish-gambino-camp",
+        "artist": "Childish Gambino",
+        "album": "Camp",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/childish gambino - camp/brelok1.jpg",
+            "media/childish gambino - camp/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -781,6 +797,38 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "mac-miller-swimming",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/mac miller - swimming/brelok1.jpg",
+            "media/mac miller - swimming/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "mac-miller-the-divine-feminine",
+        "artist": "Mac Miller",
+        "album": "The Divine Feminine",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/mac miller - the divine feminine/brelok1.jpg",
+            "media/mac miller - the divine feminine/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "malik-montana-import-export",
         "artist": "Malik Montana",
         "album": "Import/Export",
@@ -790,6 +838,22 @@
         "images": [
             "media/malik montana - import export/brelok1.jpg",
             "media/malik montana - import export/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "mata-oki-3347",
+        "artist": "Mata & Oki",
+        "album": "3347",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/mata & oki - 3347/brelok1.jpg",
+            "media/mata & oki - 3347/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -1005,6 +1069,54 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "pinkpantheress-fancy-that",
+        "artist": "PinkPantheress",
+        "album": "Fancy That",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/pinkpantheress - fancy that/brelok1.jpg",
+            "media/pinkpantheress - fancy that/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "pinkpantheress-heaven-knows",
+        "artist": "PinkPantheress",
+        "album": "Heaven Knows",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/pinkpantheress - heaven knows/brelok1.jpg",
+            "media/pinkpantheress - heaven knows/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "pinkpantheress-to-hell-with-it",
+        "artist": "PinkPantheress",
+        "album": "to hell with it",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/pinkpantheress - to hell with it/brelok1.jpg",
+            "media/pinkpantheress - to hell with it/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "pbc-music",
         "artist": "Playboi Carti",
         "album": "MUSIC",
@@ -1094,6 +1206,22 @@
         "images": [
             "media/sabrina carpenter - short n' sweet/brelok1.jpg",
             "media/sabrina carpenter - short n' sweet/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "skolim-krol-latino",
+        "artist": "Skolim",
+        "album": "Król Latino",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/skolim - krol latino/brelok1.jpg",
+            "media/skolim - krol latino/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -1472,4 +1600,3 @@
         "genre": "ROCK"
     }
 ]
-
