@@ -285,6 +285,38 @@
         "genre": "POP"
     },
     {
+        "id": "childish-gambino-awaken-my-love",
+        "artist": "Childish Gambino",
+        "album": "Awaken, My Love!",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/childish gambino - awaken my love!/brelok1.jpg",
+            "media/childish gambino - awaken my love!/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "childish-gambino-because-the-internet",
+        "artist": "Childish Gambino",
+        "album": "Because the Internet",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/childish gambino - because the internet/brelok1.jpg",
+            "media/childish gambino - because the internet/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "childish-gambino-camp",
         "artist": "Childish Gambino",
         "album": "Camp",
@@ -493,6 +525,22 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "g-i-dle-i-feel",
+        "artist": "(G)i-dle",
+        "album": "I Feel",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/(g)i-dle - i feel/brelok1.jpg",
+            "media/(g)i-dle - i feel/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "K-POP"
+    },
+    {
         "id": "gorillaz-demon-days",
         "artist": "Gorillaz",
         "album": "Demon Days",
@@ -541,6 +589,22 @@
         "genre": "ROCK"
     },
     {
+        "id": "green-day-american-idiot",
+        "artist": "Green Day",
+        "album": "American Idiot",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/green day - american idiot/brelok1.jpg",
+            "media/green day - american idiot/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
         "id": "harry-styles-fine-line",
         "artist": "Harry Styles",
         "album": "Fine Line",
@@ -573,6 +637,22 @@
         "genre": "POP"
     },
     {
+        "id": "harry-styles-self-titled",
+        "artist": "Harry Styles",
+        "album": "Harry Styles (Self Titled)",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/harry styles - self titled/brelok1.jpg",
+            "media/harry styles - self titled/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "illit-not-cute-anymore",
         "artist": "Illit",
         "album": "Not Cute Anymore",
@@ -587,6 +667,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "K-POP"
+    },
+    {
+        "id": "julia-rocka-gorset",
+        "artist": "Julia Rocka",
+        "album": "Gorset",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/julia rocka - gorset/brelok1.jpg",
+            "media/julia rocka - gorset/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "kanye-west-808s-heartbreak",
@@ -614,6 +710,22 @@
         "images": [
             "media/kanye - graduation/brelok1.jpg",
             "media/kanye - graduation/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "kanye-west-kids-see-ghosts",
+        "artist": "Kanye West & Kid Cudi",
+        "album": "Kids See Ghosts",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/kid cudi & kanye west - kids see ghosts/brelok1.jpg",
+            "media/kid cudi & kanye west - kids see ghosts/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -653,15 +765,15 @@
         "genre": "HIP-HOP"
     },
     {
-        "id": "kanye-west-kids-see-ghosts",
-        "artist": "Kanye West & Kid Cudi",
-        "album": "Kids See Ghosts",
+        "id": "kanye-west-ty-dolla-sign-vultures1",
+        "artist": "Kanye West & Ty Dolla $ign",
+        "album": "Vultures 1",
         "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/kid cudi & kanye west - kids see ghosts/brelok1.jpg",
-            "media/kid cudi & kanye west - kids see ghosts/brelok2.jpg"
+            "media/kanye & ty dolla sign - vultures 1/brelok1.jpg",
+            "media/kanye & ty dolla sign - vultures 1/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -989,6 +1101,22 @@
         "genre": "ROCK"
     },
     {
+        "id": "nirvana-in-utero",
+        "artist": "Nirvana",
+        "album": "In Utero",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/nirvana - in utero/brelok1.jpg",
+            "media/nirvana - in utero/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
         "id": "nirvana-nevermind",
         "artist": "Nirvana",
         "album": "Nevermind",
@@ -1165,6 +1293,22 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "queen-bohemian-rhapsody",
+        "artist": "Queen",
+        "album": "Bohemian Rhapsody",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/queen - bohemian rhapsody/brelok1.jpg",
+            "media/queen - bohemian rhapsody/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "raye-my-21st-century-blues",
         "artist": "RAYE",
         "album": "My 21st Century Blues",
@@ -1174,6 +1318,38 @@
         "images": [
             "media/raye - my 21st century blues/brelok1.jpg",
             "media/raye - my 21st century blues/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "rihanna-loud",
+        "artist": "Rihanna",
+        "album": "Loud",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/rihanna - loud/brelok1.jpg",
+            "media/rihanna - loud/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "rihanna-talk-talk-talk",
+        "artist": "Rihanna",
+        "album": "Talk Talk Talk",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/rihanna - talk talk talk/brelok1.jpg",
+            "media/rihanna - talk talk talk/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -1222,6 +1398,22 @@
         "images": [
             "media/skolim - krol latino/brelok1.jpg",
             "media/skolim - krol latino/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "smolasty-sylwia-grzeszczak-polowa-mnie",
+        "artist": "Smolasty & Sylwia Grzeszczak",
+        "album": "Połowa Mnie",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/smolasty & sylwia grzeszczak - polowa mnie/brelok1.jpg",
+            "media/smolasty & sylwia grzeszczak - polowa mnie/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
