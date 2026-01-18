@@ -292,8 +292,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/childish gambino - awaken my love!/brelok1.jpg",
-            "media/childish gambino - awaken my love!/brelok2.jpg"
+            "media/childish gambino - awaken, my love!/brelok1.jpg",
+            "media/childish gambino - awaken, my love!/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -674,7 +674,7 @@
         "album": "Gorset",
         "price": 35,
         "promoPrice": 30.99,
-        "isPolish": false,
+        "isPolish": true,
         "images": [
             "media/julia rocka - gorset/brelok1.jpg",
             "media/julia rocka - gorset/brelok2.jpg"
@@ -1410,7 +1410,7 @@
         "album": "Połowa Mnie",
         "price": 35,
         "promoPrice": 30.99,
-        "isPolish": false,
+        "isPolish": true,
         "images": [
             "media/smolasty & sylwia grzeszczak - polowa mnie/brelok1.jpg",
             "media/smolasty & sylwia grzeszczak - polowa mnie/brelok2.jpg"
