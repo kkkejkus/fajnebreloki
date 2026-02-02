@@ -930,4 +930,878 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const normalizeKey = (s) => String(s || '')
             .toLocaleLowerCase('pl')
-            .replace(/[^
+            .replace(/[^ -\p{L}\p{N}]+/gu, '')
+            .trim();
+
+        const firstLetter = (s) => {
+            // Group label should be based on the FIRST non-whitespace character (can be a digit/symbol).
+            // If it's a letter, we uppercase it for nicer grouping.
+            const raw = String(s || '');
+            const trimmed = raw.trimStart();
+            if (!trimmed) return '#';
+
+            const ch = Array.from(trimmed)[0];
+            if (!ch) return '#';
+
+            const upper = ch.toLocaleUpperCase('pl');
+            const lower = ch.toLocaleLowerCase('pl');
+            return upper !== lower ? upper : ch;
+        };
+
+        const comparePl = (a, b) => String(a || '').localeCompare(String(b || ''), 'pl', { sensitivity: 'base' });
+
+        const applySort = (list) => {
+            const mode = window.currentSortMode || 'NONE';
+            if (mode === 'NONE') return list;
+            const dir = mode.endsWith('_DESC') ? -1 : 1;
+            const byArtist = mode.startsWith('ARTIST_');
+            const byAlbum = mode.startsWith('ALBUM_');
+            const byGenre = mode.startsWith('GENRE_');
+
+            const customs = list.filter(p => p.isCustom);
+            const others = list.filter(p => !p.isCustom);
+
+            others.sort((pa, pb) => {
+                let ka = '';
+                let kb = '';
+                if (byArtist) {
+                    ka = pa.artist;
+                    kb = pb.artist;
+                } else if (byAlbum) {
+                    ka = pa.album;
+                    kb = pb.album;
+                } else if (byGenre) {
+                    ka = getPrimaryGenre(pa);
+                    kb = getPrimaryGenre(pb);
+                }
+
+                const primary = comparePl(ka, kb) * dir;
+                if (primary !== 0) return primary;
+                // Stable-ish fallback
+                return comparePl(pa.name, pb.name) * dir;
+            });
+
+            return [...customs, ...others];
+        };
+
+        function filterAndRender() {
+            const filtered = products.filter(p => {
+                // Customowy zawsze widoczny
+                if (p.isCustom) return true;
+
+                const filterType = window.currentCategoryFilter || 'ALL';
+                const filterValue = window.currentCategoryValue;
+                
+                // Determine if product matches the category filter
+                let matchesCategory = true;
+
+                const extractGenres = (product) => {
+                    if (!product || product.isCustom) return [];
+                    const g = product.genre;
+                    if (!g) return [];
+                    if (Array.isArray(g)) return g.filter(Boolean).map(x => String(x).trim()).filter(Boolean);
+                    return [String(g).trim()].filter(Boolean);
+                };
+
+                const extractArtists = (product) => {
+                    if (!product || product.isCustom) return [];
+                    const a = product.artist;
+                    if (!a || a === 'Custom') return [];
+                    return String(a)
+                        .split('&')
+                        .map(x => String(x).trim())
+                        .filter(Boolean);
+                };
+                
+                if (filterType === 'POLISH') {
+                    matchesCategory = p.isPolish === true;
+                } else if (filterType === 'FOREIGN') {
+                    matchesCategory = p.isPolish === false;
+                } else if (filterType === 'GENRE') {
+                    matchesCategory = extractGenres(p).includes(filterValue);
+                } else if (filterType === 'ARTIST') {
+                    matchesCategory = extractArtists(p).includes(filterValue);
+                }
+
+                // Wyszukiwanie po nazwie (name) lub artyście
+                let term = searchTerm.toLowerCase();
+
+                const normalizeKey = (s) => String(s || '')
+                    .toLocaleLowerCase('pl')
+                    .replace(/[^\p{L}\p{N}]+/gu, '');
+
+                const termKey = normalizeKey(term);
+                
+                // Ignore search term if it matches the current category label (display only)
+                if (window.currentInputLabel && term === window.currentInputLabel.toLowerCase()) {
+                    term = '';
+                }
+
+                const matchesSpecialSearch = (() => {
+                    // Allow typing the same terms as the category shortcuts.
+                    if (!termKey) return true;
+                    if (termKey.startsWith('polsk')) return p.isPolish === true;
+                    if (termKey.startsWith('zagraniczn')) return p.isPolish === false;
+                    if (termKey.startsWith('wszystk')) return true;
+                    return null;
+                })();
+
+                const matchesGenreSearch = (() => {
+                    if (!termKey) return true;
+                    return extractGenres(p).some(g => normalizeKey(g) === termKey);
+                })();
+
+                const matchesTextSearch =
+                    p.name.toLowerCase().includes(term) ||
+                    p.artist.toLowerCase().includes(term) ||
+                    extractArtists(p).some(a => a.toLowerCase().includes(term));
+
+                const matchesSearch =
+                    (matchesSpecialSearch !== null ? matchesSpecialSearch : false) ||
+                    matchesGenreSearch ||
+                    matchesTextSearch;
+                
+                return matchesCategory && matchesSearch;
+            });
+
+            const sorted = applySort(filtered);
+            renderGrid(sorted, window.currentSortMode || 'NONE');
+        }
+
+        // Attach listener to nav search input if not already attached (or re-attach logic specific to this view)
+        // Since navSearchInput is global, we can just update the local searchTerm variable
+        if (navSearchInput) {
+            // Remove old listeners to avoid duplicates if we re-render landing page?
+            // Actually, the global listener updates the input value.
+            // We need to listen to input changes here to update the grid.
+            
+            // Define the handler
+            const handleInput = (e) => {
+                searchTerm = e.target.value;
+
+                // Keep last typed value for future re-renders.
+                window.__searchTermCache = searchTerm;
+
+                // Jeśli użytkownik zmienia tekst w wyszukiwarce, resetujemy filtr kategorii na ALL,
+                // chyba że tekst nadal pasuje do etykiety (co jest mało prawdopodobne przy pisaniu, ale możliwe przy wklejaniu)
+                // Dzięki temu edycja tekstu "Polskie albumy" na "Polskie" spowoduje wyszukanie frazy "Polskie" we wszystkich produktach,
+                // a wyczyszczenie pola spowoduje pokazanie wszystkich produktów.
+                if (window.currentInputLabel && searchTerm !== window.currentInputLabel) {
+                    window.currentCategoryFilter = 'ALL';
+                    window.currentCategoryValue = null;
+                    window.currentInputLabel = null;
+                }
+
+                filterAndRender();
+            };
+            
+            // Cleanup when leaving this view? 
+            // Since it's a SPA and we overwrite app.innerHTML, this function scope will be garbage collected,
+            // BUT the event listener on navSearchInput (which is outside app) will persist and keep a reference to handleInput!
+            // This is a memory leak and logic bug (multiple listeners accumulating).
+            
+            // Fix: We should probably have a single global listener that calls a "currentPageFilterFunction" if it exists.
+            // OR: We remove the listener when we navigate away.
+            // For now, let's use a simple property on the element to store the current handler and remove it.
+            
+            if (navSearchInput.currentHandler) {
+                navSearchInput.removeEventListener('input', navSearchInput.currentHandler);
+            }
+            navSearchInput.currentHandler = handleInput;
+            navSearchInput.addEventListener('input', handleInput);
+        }
+
+        const getGroupLabel = (product, mode) => {
+            if (!product) return '#';
+            if (product.isCustom) return 'NA ZAMÓWIENIE';
+            if (mode === 'ARTIST_ASC' || mode === 'ARTIST_DESC') return firstLetter(product.artist);
+            if (mode === 'ALBUM_ASC' || mode === 'ALBUM_DESC') return firstLetter(product.album);
+            if (mode === 'GENRE_ASC' || mode === 'GENRE_DESC') {
+                const g = getPrimaryGenre(product);
+                return g || 'INNE';
+            }
+            return '#';
+        };
+
+        const renderGroupHeader = (label, count) => {
+            const safe = escapeHtml(label);
+            const safeCount = Number.isFinite(count) ? count : null;
+            const suffix = safeCount !== null ? ` <span class="grid-group-count">(${safeCount})</span>` : '';
+            return `
+                <div class="grid-group-header" aria-hidden="true">
+                    <span class="grid-group-title">${safe}${suffix}</span>
+                    <span class="grid-group-line"></span>
+                </div>
+            `;
+        };
+
+        function renderGrid(filteredProducts, sortMode = 'NONE') {
+            if (filteredProducts.length === 0) {
+                productsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--muted-text-color); padding: 40px;">Nie znaleziono produktów spełniających kryteria.</p>';
+                return;
+            }
+
+            let gridHtml = '';
+
+            const renderCard = (product) => {
+                // Use promoPrice if available, otherwise price
+                const displayPrice = product.promoPrice || product.price;
+                const oldPricePln = product.isCustom ? 50.0 : 45.0;
+                const image1 = product.images && product.images.length > 0 ? product.images[0] : 'https://placehold.co/600x600?text=No+Image';
+                const image2 = product.images && product.images.length > 1 ? product.images[1] : image1;
+                
+                const isCustom = product.isCustom ? 'custom-card' : '';
+                const customLabel = product.isCustom ? '<div class="custom-label">NA ZAMÓWIENIE</div>' : '';
+
+                const cardTitleHtml = product.isCustom
+                    ? product.name
+                    : `${product.artist}<br><span class="card-album">„${product.album}”</span>`;
+
+                gridHtml += `
+                    <a href="index.html?id=${product.id}" class="product-card ${isCustom}">
+                        ${customLabel}
+                        <div class="card-image-container">
+                            <img src="${image1}" alt="${product.name}" class="card-image card-image-main" loading="lazy" decoding="async" fetchpriority="low">
+                            <img src="${image2}" alt="${product.name} - widok 2" class="card-image card-image-hover" loading="lazy" decoding="async" fetchpriority="low">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">${cardTitleHtml}</h3>
+                            <p class="card-price">${formatMoneyInline(displayPrice)} <span class="old-price">${formatMoneyInline(oldPricePln)}</span></p>
+                        </div>
+                    </a>
+                `;
+            };
+
+            if (sortMode && sortMode !== 'NONE') {
+                const customs = filteredProducts.filter(p => p.isCustom);
+                const others = filteredProducts.filter(p => !p.isCustom);
+
+                const groupCounts = new Map();
+                others.forEach((product) => {
+                    const group = getGroupLabel(product, sortMode);
+                    groupCounts.set(group, (groupCounts.get(group) || 0) + 1);
+                });
+
+                if (customs.length) {
+                    gridHtml += renderGroupHeader('NA ZAMÓWIENIE', customs.length);
+                    customs.forEach(renderCard);
+                }
+
+                let lastGroup = null;
+                others.forEach(product => {
+                    const group = getGroupLabel(product, sortMode);
+                    if (group !== lastGroup) {
+                        gridHtml += renderGroupHeader(group, groupCounts.get(group) || 0);
+                        lastGroup = group;
+                    }
+                    renderCard(product);
+                });
+            } else {
+                gridHtml += renderGroupHeader('WSZYSTKIE', filteredProducts.length);
+                filteredProducts.forEach(renderCard);
+            }
+
+            productsGrid.innerHTML = gridHtml;
+        }
+
+        // Event Listeners
+        // searchInput removed from DOM, logic moved to navSearchInput above
+
+        // Sort dropdown options
+        const sortList = document.getElementById('sortList');
+        if (sortList) {
+            const renderSortOptions = () => {
+                sortList.innerHTML = '';
+                const current = window.currentSortMode || 'NONE';
+                SORT_OPTIONS.forEach((opt) => {
+                    const link = document.createElement('a');
+                    link.href = '#';
+                    link.textContent = opt.label;
+                    link.classList.toggle('is-selected', opt.key === current);
+                    link.onclick = (e) => {
+                        e.preventDefault();
+                        window.currentSortMode = opt.key;
+                        renderSortOptions();
+                        filterAndRender();
+                    };
+                    sortList.appendChild(link);
+                });
+            };
+            renderSortOptions();
+        }
+
+        // Pierwsze renderowanie
+        filterAndRender();
+    }
+
+    // Funkcja renderująca szczegóły produktu
+    function renderProductDetail(id, products) {
+        setNavSearchVisible(false);
+
+        const product = products.find(p => p.id === id);
+
+        if (!product) {
+            app.innerHTML = `
+                <div style="text-align:center; padding: 50px;">
+                    <h2>Nie znaleziono produktu :(</h2>
+                    <a href="/" class="btn-buy btn-vinted" style="margin-top:20px; display:inline-block; width:auto;">Wróć do sklepu</a>
+                </div>
+            `;
+            return;
+        }
+
+        // Zaktualizuj tytuł strony
+        document.title = `${product.name} - FajneBreloki.pl`;
+
+        // Set global lightbox images
+        lightboxImages = product.images || [];
+        lightboxIndex = 0;
+
+        // Determine prices (stored in PLN; formatted according to selected currency)
+        const vintedPricePln = product.promoPrice ? product.promoPrice : product.price;
+        const standardPricePln = product.price;
+        const oldPricePln = product.isCustom ? 50.0 : 45.0;
+        
+        const image1 = product.images && product.images.length > 0 ? product.images[0] : 'https://placehold.co/600x600?text=No+Image';
+        
+        let thumbnailsHtml = '';
+        if (product.images && product.images.length > 1) {
+            thumbnailsHtml = `
+                <div class="detail-thumbnails">
+                    ${product.images.map((img, index) => {
+                        const label = index === 0 ? "Okładka" : "Wnętrze";
+                        return `
+                        <div class="thumbnail-wrapper" onclick="changeMainImage(this, '${img}', ${index})">
+                            <img src="${img}" class="thumbnail ${index === 0 ? 'active' : ''}" alt="${label}" loading="lazy" decoding="async">
+                            <span class="thumbnail-label">${label}</span>
+                        </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+        }
+
+        // Renderowanie sekcji zakupu (przyciski lub formularz)
+        let buySection = '';
+        let formSection = '';
+        
+        if (product.isCustom) {
+            formSection = `
+                <div class="custom-order-form full-width">
+                    <h3>ZAMÓW SWÓJ</h3>
+                    <h2 style="margin-top:-12px">UNIKALNY BRELOK✨</h2>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem;">✏️ Wypełnij formularz, a skontaktuję się z Tobą w celu ustalenia szczegółów.</p>
+                    
+                    <form id="customOrderForm" action="https://formspree.io/f/mldyelez" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Imię</label>
+                                <input type="text" id="name" name="name" required placeholder="Twoje imię">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="twoj@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="platform">Gdzie preferujesz zakup?</label>
+                                <select id="platform" name="platform">
+                                    <option value="vinted">Vinted (${formatMoneyInline(product.promoPrice || product.price)} - Najtaniej!)</option>
+                                    <option value="olx">OLX (${formatMoneyInline(product.price)})</option>
+                                    <option value="allegro">Allegro Lokalnie (${formatMoneyInline(product.price)})</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group tooltip-container">
+                                <label for="music_platform">Platforma streamingowa ℹ️</label>
+                                <select id="music_platform" name="music_platform">
+                                    <option value="spotify">Spotify (Domyślne)</option>
+                                    <option value="apple_music">Apple Music</option>
+                                    <option value="youtube_music">YouTube Music</option>
+                                    <option value="tidal">Tidal</option>
+                                    <option value="other">Inna (napisz niżej)</option>
+                                </select>
+                                <span class="tooltip-text">Wybierz aplikację, w której ma się otwierać album po zbliżeniu telefonu do breloka.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="album">Jaki album Cię interesuje?</label>
+                            <input type="text" id="album" name="album" required placeholder="np. The Weeknd - After Hours">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="details">Dodatkowe informacje (opcjonalne)</label>
+                            <textarea id="details" style="height: 100px;" name="details" rows="2" placeholder="np. link do konkretnej playlisty lub inne uwagi / zapytanie o brelok ze swoją grafiką..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">WYŚLIJ ZAPYTANIE ➤</button>
+                    </form>
+                    <p style="margin-top: 10px; font-size: 0.8rem; color: #888;">
+                        * To zapytanie jest niezobowiązujące. Odpiszę najszybciej jak to możliwe!
+                    </p>
+                </div>
+            `;
+        } else {
+            buySection = `
+                <div class="buy-buttons">
+                    <a href="${product.vintedUrl}" title="Kliknij, aby przejść na Vinted" target="_blank" rel="noopener noreferrer" class="btn-buy btn-vinted">
+                        <span>KUP TERAZ NA VINTED</span>
+                        <span class="price-tag">${formatMoneyInline(vintedPricePln)}</span>
+                    </a>
+                    
+                    <a href="${product.olxUrl}" title="Kliknij, aby przejść na OLX" target="_blank" rel="noopener noreferrer" class="btn-buy btn-olx">
+                        <span>KUP TERAZ NA OLX</span>
+                        <span class="price-tag">${formatMoneyInline(standardPricePln)}</span>
+                    </a>
+
+                    <a href="${product.allegroUrl}" title="Kliknij, aby przejść na Allegro Lokalnie" target="_blank" rel="noopener noreferrer" class="btn-buy btn-allegro">
+                        <span>KUP TERAZ NA <br class="mobile-break">ALLEGRO LOKALNIE</span>
+                        <span class="price-tag">${formatMoneyInline(standardPricePln)}</span>
+                    </a>
+                </div>
+            `;
+        }
+
+        const descriptionHtml = renderDescriptionWithLineGaps(
+            product.description || `Ręcznie wykonany brelok z okładką albumu **${product.album}** artysty **${product.artist}**. Wyposażony w chip NFC, który po zbliżeniu telefonu otwiera album w Spotify.`
+        );
+
+        const detailTitleHtml = product.isCustom
+            ? `<span class="detail-artist">${product.name}</span>`
+            : `<span class="detail-artist">${product.artist}</span><br><span class="detail-album">„${product.album}”</span>`;
+
+        const html = `
+            <a href="index.html" class="back-link">← Wróć do strony głównej</a>
+            <div class="product-detail-container">
+                <div class="product-detail">
+                    <div class="detail-image">
+                        <img id="mainImage" src="${image1}" alt="${product.name}" onclick="openLightbox(lightboxIndex)" style="cursor: zoom-in;" decoding="async" loading="eager" fetchpriority="high">
+                        ${thumbnailsHtml}
+                    </div>
+                    <div class="detail-info">
+                        <h1 class="detail-heading">
+                            <strong class="detail-kicker">Brelok CD z NFC💥</strong>
+                            <span class="detail-title">${detailTitleHtml}</span>
+                        </h1>
+                        <p class="detail-price">${formatMoneyInline(vintedPricePln)} <span class="old-price">${formatMoneyInline(oldPricePln)}</span></p>
+                        <div class="detail-desc">${descriptionHtml}</div>
+                        
+                        ${buySection}
+                    </div>
+                </div>
+                ${formSection}
+            </div>
+        `;
+
+        app.innerHTML = html;
+
+        // Handle form submission with AJAX
+        const form = document.getElementById('customOrderForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const btn = form.querySelector('.btn-submit');
+                const originalText = btn.innerText;
+                btn.innerText = 'WYSYŁANIE...';
+                btn.disabled = true;
+
+                const formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        form.innerHTML = `
+                            <div style="text-align: center; padding: 40px 20px;">
+                                <div style="font-size: 3rem; margin-bottom: 20px;">✅</div>
+                                <h3 style="color: #0f5132; margin-bottom: 10px;">Wiadomość wysłana!</h3>
+                                <p>Dzięki za zainteresowanie. Odezwę się do Ciebie mailowo najszybciej jak to możliwe!</p>
+                                <button onclick="location.reload()" class="btn-buy btn-vinted no-badge" style="margin-top: 20px; width: auto; display: inline-block; font-size: 0.9rem;">Wróć do sklepu</button>
+                            </div>
+                        `;
+                    } else {
+                        alert('Wystąpił błąd przy wysyłaniu formularza. Spróbuj ponownie później.');
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    }
+                }).catch(error => {
+                    console.error('Error:', error);
+                    alert('Wystąpił błąd przy wysyłaniu formularza. Spróbuj ponownie później.');
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                });
+            });
+        }
+    }
+
+    // Funkcja renderująca stronę wysyłki
+    function renderShippingPage() {
+        setNavSearchVisible(false);
+
+        document.title = 'Wysyłka - FajneBreloki.pl';
+        app.innerHTML = `
+            <div style="max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
+                <h1 style="text-align: center; margin: 0 20px 40px; line-height: 1.2;">Informacje o wysyłce 📦</h1>
+                
+                <div class="shipping-info-box" style="margin-bottom: 50px; text-align: center; padding: 20px; background: var(--callout-bg); border-radius: 15px; border: 1px solid var(--callout-border); max-width: 550px; margin-left: auto; margin-right: auto;">
+                    <h3 style="color: var(--callout-title-color); margin-bottom: 15px;">⏱️ Czas realizacji</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.3; margin-bottom: 10px;"><strong>Standardowe breloki:</strong> wysyłka w 24h</p>
+                    <p style="font-size: 1.1rem; line-height: 1.3; margin-bottom: 12px;"><strong>Breloki customowe:</strong> wysyłka do 48h</p>
+                    
+                    <div style="border-top: 1px solid var(--callout-border); margin: 12px; padding-top: 15px;">
+                        <p style="font-size: 1.1rem; line-height: 1.2;"><strong>📍Odbiór osobisty:</strong> Wrocław</p>
+                        <p style="font-size: 0.9rem; line-height: 1; color: var(--muted-text-color)">(po wcześniejszym umówieniu)</p>
+                    </div>
+                </div>
+
+                <div class="pricing-table">
+                    <!-- Vinted -->
+                    <div class="pricing-card popular">
+                        <div class="pricing-header" style="background: #007782;">
+                            <div class="popular-badge">NAJTANIEJ!</div>
+                            <h3>Vinted</h3>
+                            <p>Największy wybór przewoźników</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ InPost Kurier & Paczkomat</li>
+                            <li>✅ Poczta Polska MiniPaczka</li>
+                            <li>✅ ORLEN Paczka</li>
+                            <li>✅ DPD Kurier & Paczkomat</li>
+                            <li>✅ DHL Kurier & Paczkomat</li>
+                            <li>✅ UPS Kurier & Paczkomat</li>
+                            <li>✅ GLS Kurier & Paczkomat</li>
+                            <li>✅ Pocztex Kurier & Paczkomat</li>
+                        </ul>
+                    </div>
+
+                    <!-- OLX -->
+                    <div class="pricing-card">
+                        <div class="pricing-header" style="background: #002f34;">
+                            <h3>OLX</h3>
+                            <p>Popularna alternatywa</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ InPost Paczkomat</li>
+                            <li>✅ Poczta Polska MiniPaczka</li>
+                            <li>✅ ORLEN Paczka</li>
+                            <li>✅ DPD Kurier</li>
+                            <li class="disabled">❌ DHL, UPS, GLS, Pocztex</li>
+                        </ul>
+                    </div>
+
+                    <!-- Allegro -->
+                    <div class="pricing-card">
+                        <div class="pricing-header" style="background: #ff5a00;">
+                            <h3>Allegro Lokalnie</h3>
+                            <p><strong>Darmowa wysyłka</strong> od 45zł<br/> z <u>pakietem Smart</u></li></p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>✅ InPost Kurier & Paczkomat<br/>
+                            
+                            <li class="disabled">❌ Pozostali przewoźnicy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        trackGaPageView();
+
+        trackGaPageView();
+    }
+
+    // Funkcja renderująca stronę FAQ
+    function renderFaqPage() {
+        setNavSearchVisible(false);
+
+        document.title = 'FAQ - FajneBreloki.pl';
+        app.innerHTML = `
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h1 style="text-align: center; line-height: 1.2; padding: 40px 0 20px; font-size: 2em;">Jak to działa? 🤔</h1>
+                
+                <div class="how-it-works-steps">
+                    <div class="step-card">
+                        <div class="step-icon">💿</div>
+                        <h3>1. Wybierz album</h3>
+                        <p>Znajdź swój ulubiony album w sklepie lub zamów własny projekt.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">📲</div>
+                        <h3>2. Zbliż telefon</h3>
+                        <p>Przyłóż górną krawędź telefonu (iPhone) lub środek tyłu (Android) do breloka.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">🎧</div>
+                        <h3>3. Słuchaj muzyki</h3>
+                        <p>Kliknij powiadomienie, które pojawi się na ekranie. Album otworzy się automatycznie!</p>
+                    </div>
+                </div>
+
+                <h2 style="text-align: center; line-height: 1.2; padding-bottom: 20px; font-size: 2em;">Częste pytania (FAQ)</h2>
+
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary>Czy w zestawie jest płyta CD?</summary>
+                        <p>Nie, jest to mały brelok imitujący płytę CD (o wymiarach 5cm×4.5cm×0.8cm). Nie zawiera on prawdziwej płyty z muzyką, a jedynie chip NFC, który po zbliżeniu do telefonu otwiera album w aplikacji streamingowej (np. Spotify).</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Czy brelok działa z każdym telefonem?</summary>
+                        <p>Brelok działa z każdym smartfonem wyposażonym w moduł NFC. Większość telefonów wyprodukowanych po 2018 roku posiada tę funkcję (m.in. wszystkie iPhone'y od modelu XS/XR w górę oraz większość Androidów).</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Czy muszę instalować specjalną aplikację?</summary>
+                        <p>Nie! Wystarczy, że masz zainstalowaną aplikację Spotify (lub inną wybraną, np. Apple Music). Telefon sam rozpozna brelok i zaproponuje otwarcie albumu.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Zimą NFC czasem nie działa od razu — co zrobić?</summary>
+                        <p>W niskiej temperaturze (np. po dostawie lub gdy brelok był na mrozie) NFC może zadziałać z opóźnieniem. Daj brelokowi się ogrzać do temperatury pokojowej i spróbuj ponownie po kilku godzinach — zwykle to rozwiązuje problem.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Czy brelok wymaga baterii lub ładowania?</summary>
+                        <p>Nie. Chip NFC wewnątrz breloka jest pasywny – zasilany jest energią z pola magnetycznego Twojego telefonu w momencie zbliżenia. Będzie działał wiecznie!</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Czy mogę zmienić album przypisany do breloka?</summary>
+                        <p>Domyślnie breloki są zabezpieczone przed nadpisaniem, aby nikt przypadkowo nie usunął zawartości. Jeśli jednak chcesz mieć możliwość zmiany albumu w przyszłości, napisz o tym w wiadomości przy zamówieniu – zostawię go odblokowanego!</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Czy brelok działa przez etui?</summary>
+                        <p>Tak, sygnał NFC przenika przez większość standardowych etui (silikonowe, plastikowe, skórzane). Problemy mogą występować jedynie przy bardzo grubych, pancernych obudowach lub tych wykonanych z metalu.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Ile czasu trwa realizacja zamówienia?</summary>
+                        <p>Breloki dostępne "od ręki" wysyłam zazwyczaj w ciągu 24h. Zamówienia personalizowane (custom) realizuję w ciągu 1-3 dni roboczych.</p>
+                    </details>
+                </div>
+                
+                <div style="text-align: center; margin-top: 50px;">
+                    <p>Masz inne pytanie?</p>
+                    <a href="index.html?page=contact" class="btn-buy btn-vinted no-badge" style="display: inline-block; width: auto; margin-top: 10px; font-size: 1rem;">Napisz do mnie!</a>
+                </div>
+            </div>
+        `;
+
+        trackGaPageView();
+    }
+
+    function renderPrivacyPage() {
+        setNavSearchVisible(false);
+
+        document.title = 'Polityka Prywatności - FajneBreloki.pl';
+        app.innerHTML = `
+            <div style="max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.6;">
+                <h1 style="text-align: center; margin-bottom: 40px;">Polityka Prywatności</h1>
+                
+                <section style="margin-bottom: 30px;">
+                    <h2>1. Informacje ogólne</h2>
+                    <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazanych przez Użytkowników w związku z korzystaniem ze strony internetowej FajneBreloki.pl.</p>
+                    <p>Administratorem danych osobowych jest właściciel serwisu FajneBreloki.pl. Kontakt: <a href="mailto:kamiljama@gmail.com" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">kamiljama@gmail.com</a>.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>2. Jakie dane zbieramy?</h2>
+                    <p>Podczas korzystania z naszej strony możemy zbierać następujące dane:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Dane kontaktowe:</strong> adres e-mail oraz treść wiadomości (gdy kontaktujesz się z nami e-mailem lub przez wskazane kanały kontaktu).</li>
+                        <li><strong>Dane techniczne:</strong> informacje o urządzeniu i przeglądarce, przybliżona lokalizacja, źródło wejścia, odsłony i sposób korzystania ze strony (dane analityczne).</li>
+                        <li><strong>Dane o preferencjach:</strong> informacje o preferencjach wyświetlania strony (np. tryb jasny/ciemny) zapisywane w pamięci przeglądarki (LocalStorage).</li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>3. Cel przetwarzania danych</h2>
+                    <p>Twoje dane przetwarzane są wyłącznie w celu:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                        <li>Udzielenia odpowiedzi na przesłane zapytania.</li>
+                        <li>Realizacji zamówień (w przypadku kontaktu bezpośredniego).</li>
+                        <li>Zapewnienia prawidłowego działania strony (np. zapamiętanie wybranego motywu).</li>
+                        <li>Prowadzenia statystyk i analizy ruchu na stronie, aby ulepszać serwis i treści.</li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>4. Narzędzia analityczne (Google Analytics 4)</h2>
+                    <p>Na stronie korzystamy z narzędzia analitycznego <strong>Google Analytics 4</strong>, które pomaga nam zrozumieć, jak Użytkownicy korzystają z serwisu (np. które podstrony są najczęściej odwiedzane, z jakich urządzeń i źródeł ruchu).</p>
+                    <p>Dostawcą usługi jest co do zasady <strong>Google Ireland Limited</strong> (a w ramach grupy Google dane mogą być przetwarzane również przez <strong>Google LLC</strong>).</p>
+                    <p>W ramach analityki mogą być przetwarzane dane techniczne, takie jak identyfikatory online (np. pliki cookies), przybliżona lokalizacja, typ urządzenia, przeglądarka, adresy URL, informacje o interakcjach oraz czas wizyt.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>5. Pliki cookies i LocalStorage</h2>
+                    <p>Strona może wykorzystywać pliki <strong>cookies</strong> związane z działaniem narzędzi analitycznych (Google Analytics 4). Możesz ograniczyć lub zablokować cookies w ustawieniach swojej przeglądarki albo korzystać z dodatków blokujących śledzenie (np. uBlock Origin).</p>
+                    <p>Wykorzystujemy również mechanizm <strong>LocalStorage</strong> do zapamiętania Twoich preferencji dotyczących wyglądu strony (tryb jasny/ciemny). Dane te są przechowywane na Twoim urządzeniu.</p>
+                    <p>Więcej informacji o tym, jak Google przetwarza dane: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">policies.google.com/privacy</a>.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>6. Udostępnianie danych</h2>
+                    <p>Twoje dane nie są sprzedawane. Mogą być udostępniane podmiotom trzecim wyłącznie wtedy, gdy jest to niezbędne do działania strony lub realizacji zamówienia, w szczególności:</p>
+                    <ul style="list-style-type: disc; margin-left: 20px; margin-top: 10px;">
+                        <li>dostawcom usług analitycznych (Google Analytics 4 / Google),</li>
+                        <li>platformom sprzedażowym i usługom, z których korzystasz przy zakupie (np. Vinted/OLX/Allegro),</li>
+                        <li>podmiotom obsługującym wysyłkę (np. firmy kurierskie) – w zakresie niezbędnym do realizacji zamówienia,</li>
+                        <li>organom publicznym – jeśli wymagają tego przepisy prawa.</li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>7. Przekazywanie danych poza EOG</h2>
+                    <p>W związku z korzystaniem z usług Google, dane mogą być przekazywane do państw poza Europejski Obszar Gospodarczy (np. do USA). Google stosuje mechanizmy prawne przewidziane przez przepisy ochrony danych (np. standardowe klauzule umowne), aby zapewnić odpowiedni poziom ochrony.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>8. Okres przechowywania danych</h2>
+                    <p>Dane kontaktowe przechowujemy przez czas potrzebny do obsługi korespondencji oraz ewentualnych roszczeń. Dane analityczne w Google Analytics 4 są przechowywane zgodnie z konfiguracją ustawień retencji w GA4.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>9. Twoje prawa</h2>
+                    <p>Masz prawo do wglądu w swoje dane, ich sprostowania, żądania usunięcia lub ograniczenia przetwarzania, a także prawo wniesienia sprzeciwu – w granicach przewidzianych przepisami.</p>
+                    <p>W sprawach związanych z ochroną danych skontaktuj się z nami: <a href="mailto:kamiljama@gmail.com" style="color: var(--accent-color); text-decoration: none; font-weight: 600;">kamiljama@gmail.com</a>. Masz również prawo złożyć skargę do Prezesa UODO.</p>
+                </section>
+
+                <section style="margin-bottom: 30px;">
+                    <h2>10. Zmiany w polityce</h2>
+                    <p>Możemy aktualizować niniejszą Politykę Prywatności w razie zmian na stronie lub w przepisach. Ostatnia aktualizacja: 05.01.2026.</p>
+                </section>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="index.html" class="btn-buy btn-vinted no-badge" style="display: inline-block; width: auto; font-size: 1rem;">Wróć do strony głównej</a>
+                </div>
+            </div>
+        `;
+
+        trackGaPageView();
+    }
+});
+
+// Global variables for lightbox
+let lightboxImages = [];
+let lightboxIndex = 0;
+
+// Global function to change image
+function changeMainImage(wrapper, src, index) {
+    document.getElementById('mainImage').src = src;
+    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+    wrapper.querySelector('.thumbnail').classList.add('active');
+    if (typeof index !== 'undefined') lightboxIndex = index;
+}
+
+// Lightbox functions
+function openLightbox(index) {
+    if (typeof index !== 'undefined') lightboxIndex = index;
+
+    // Create lightbox element if it doesn't exist
+    let lightbox = document.getElementById('lightbox');
+    if (!lightbox) {
+        lightbox = document.createElement('div');
+        lightbox.id = 'lightbox';
+        lightbox.className = 'lightbox';
+        lightbox.onclick = (e) => {
+            if (e.target === lightbox) closeLightbox();
+        };
+        lightbox.innerHTML = `
+            <div class="lightbox-content">
+                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-nav prev" onclick="prevLightboxImage()">&#10094;</div>
+                <img id="lightboxImage" src="" decoding="async">
+                <div class="lightbox-nav next" onclick="nextLightboxImage()">&#10095;</div>
+            </div>
+        `;
+        document.body.appendChild(lightbox);
+    }
+    
+    updateLightboxImage();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+}
+
+function updateLightboxImage() {
+    const img = document.getElementById('lightboxImage');
+    const prevBtn = document.querySelector('.lightbox-nav.prev');
+    const nextBtn = document.querySelector('.lightbox-nav.next');
+    
+    if (lightboxImages.length > 0) {
+        img.src = lightboxImages[lightboxIndex];
+    }
+    
+    // Show/hide arrows
+    if (lightboxIndex > 0) {
+        prevBtn.style.display = 'flex';
+    } else {
+        prevBtn.style.display = 'none';
+    }
+    
+    if (lightboxIndex < lightboxImages.length - 1) {
+        nextBtn.style.display = 'flex';
+    } else {
+        nextBtn.style.display = 'none';
+    }
+}
+
+function nextLightboxImage() {
+    if (lightboxIndex < lightboxImages.length - 1) {
+        lightboxIndex++;
+        updateLightboxImage();
+    }
+    event.stopPropagation();
+}
+
+function prevLightboxImage() {
+    if (lightboxIndex > 0) {
+        lightboxIndex--;
+        updateLightboxImage();
+    }
+    event.stopPropagation();
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+}
+
+// Hamburger Menu Logic
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent click from bubbling to document immediately
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+}
