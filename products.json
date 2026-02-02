@@ -1,7 +1,7 @@
 [
     {
         "id": "custom-brelok",
-        "name": "PERSONALIZOWANY ALBUM ✨",
+        "name": "PERSONALIZOWANY ALBUM✨",
         "artist": "Custom",
         "price": 39,
         "promoPrice": 33.99,
@@ -16,7 +16,6 @@
         "id": "asap-rocky-at-long-last-asap",
         "artist": "A$AP Rocky",
         "album": "At. Long. Last. A$AP",
-        "genre": "HIP-HOP",
         "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
@@ -26,7 +25,24 @@
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
-        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus"
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "asap-rocky-dont-be-dumb",
+        "artist": "A$AP Rocky",
+        "album": "Don't Be Dumb",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/asap rocky - dont be dumb/brelok1.jpg",
+            "media/asap rocky - dont be dumb/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "asap-rocky-live-love-asap",
@@ -203,6 +219,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "HIP-HOP"
+    },
+    {
+        "id": "big-time-rush-another-life",
+        "artist": "Big Time Rush",
+        "album": "Another Life",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/big time rush - another life/brelok1.jpg",
+            "media/big time rush - another life/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "billie-eilish-happier-than-ever",
@@ -461,6 +493,22 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "esdeekid-rebel",
+        "artist": "EsDeeKid",
+        "album": "Rebel",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/esdeekid - rebel/brelok1.jpg",
+            "media/esdeekid - rebel/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "future-ds2",
         "artist": "Future",
         "album": "DS2",
@@ -526,7 +574,7 @@
     },
     {
         "id": "g-i-dle-i-feel",
-        "artist": "(G)i-dle",
+        "artist": "G i-dle",
         "album": "I Feel",
         "price": 35,
         "promoPrice": 30.99,
@@ -539,6 +587,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "K-POP"
+    },
+    {
+        "id": "gojira-from-mars-to-sirius",
+        "artist": "Gojira",
+        "album": "From Mars to Sirius",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/gojira - from mars to sirius/brelok1.jpg",
+            "media/gojira - from mars to sirius/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
     },
     {
         "id": "gorillaz-demon-days",
@@ -554,7 +618,7 @@
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
-        "genre": "ROCK"
+        "genre": "HIP-HOP"
     },
     {
         "id": "gorillaz-self-titled",
@@ -570,7 +634,7 @@
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
-        "genre": "ROCK"
+        "genre": "HIP-HOP"
     },
     {
         "id": "gorillaz-song-machine",
@@ -586,7 +650,7 @@
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
-        "genre": "ROCK"
+        "genre": "HIP-HOP"
     },
     {
         "id": "green-day-american-idiot",
@@ -653,6 +717,22 @@
         "genre": "POP"
     },
     {
+        "id": "hubert-kolorowe-domy",
+        "artist": "Hubert.",
+        "album": "Kolorowe Domy",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/hubert. - kolorowe domy/brelok1.jpg",
+            "media/hubert. - kolorowe domy/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "illit-not-cute-anymore",
         "artist": "Illit",
         "album": "Not Cute Anymore",
@@ -667,6 +747,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "K-POP"
+    },
+    {
+        "id": "jcole-2014-forest-hills-drive",
+        "artist": "J. Cole",
+        "album": "2014 Forest Hills Drive",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/j cole - 2014 forest hills drive/brelok1.jpg",
+            "media/j cole - 2014 forest hills drive/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "julia-rocka-gorset",
@@ -957,6 +1053,22 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "marilyn-manson-the-pale-emperor",
+        "artist": "Marilyn Manson",
+        "album": "The Pale Emperor",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/marilyn manson - the pale emperor/brelok1.jpg",
+            "media/marilyn manson - the pale emperor/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "mata-oki-3347",
         "artist": "Mata & Oki",
         "album": "3347",
@@ -1133,6 +1245,22 @@
         "genre": "ROCK"
     },
     {
+        "id": "oasis-morning-glory",
+        "artist": "Oasis",
+        "album": "(What's the Story) Morning Glory?",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/oasis - (what's the story) morning glory/brelok1.jpg",
+            "media/oasis - (what's the story) morning glory/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "olivia-rodrigo-guts",
         "artist": "Olivia Rodrigo",
         "album": "GUTS",
@@ -1293,6 +1421,22 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "pono-hold",
+        "artist": "Pono",
+        "album": "Hołd",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/pono - hołd/brelok1.jpg",
+            "media/pono - hołd/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "queen-bohemian-rhapsody",
         "artist": "Queen",
         "album": "Bohemian Rhapsody",
@@ -1421,6 +1565,22 @@
         "genre": "POP"
     },
     {
+        "id": "soko-feel-feelings",
+        "artist": "Soko",
+        "album": "Feel Feelings",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/soko - feel feelings/brelok1.jpg",
+            "media/soko - feel feelings/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "sza-sos",
         "artist": "SZA",
         "album": "SOS",
@@ -1435,6 +1595,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "POP"
+    },
+    {
+        "id": "szpaku-uzumaki-forma-ostateczna",
+        "artist": "Szpaku",
+        "album": "Uzumaki Forma Ostateczna",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/szpaku - uzumaki forma ostateczna/brelok1.jpg",
+            "media/szpaku - uzumaki forma ostateczna/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "tame-impala-currents",
@@ -1790,5 +1966,21 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "ROCK"
+    },
+    {
+        "id": "xxxtentacion-17",
+        "artist": "XXXTentacion",
+        "album": "17",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/xxxtentacion - 17/brelok1.jpg",
+            "media/xxxtentacion - 17/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     }
 ]
