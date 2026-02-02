@@ -49,16 +49,6 @@
                 <span>FajneBreloki<span class="dot">.pl</span></span>
             </a>
             
-            <div class="nav-search-container" id="navSearchContainer">
-                <div class="dropdown">
-                    <button class="dropbtn"><span class="dropbtn-text">Kategorie</span><span class="arrow">▼</span></button>
-                    <div class="dropdown-content" id="artistList">
-                        <!-- Lista artystów generowana dynamicznie -->
-                    </div>
-                </div>
-                <input type="text" id="navSearchInput" class="nav-search-input" placeholder="🔎 Szukaj albumu...">
-            </div>
-
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -70,7 +60,6 @@
                 <li><a href="index.html?page=faq">FAQ</a></li>
                 <li><a href="index.html?page=shipping">Wysyłka</a></li>
                 <li><a href="index.html?page=contact">Kontakt</a></li>
-                <li><button id="themeToggle" class="theme-toggle" title="kliknij, aby przełączyć na tryb ciemny">🌤️</button></li>
             </ul>
         </div>
     </nav>
@@ -83,11 +72,13 @@
     <footer class="footer">
         <div class="container">
             <p>
-                <span>&copy; 2025 FajneBreloki.pl by @kkkejkus</span>
+                <span>&copy; 2025-2026 FajneBreloki.pl by @kkkejkus</span>
                 <span class="footer-separator">All rights reserved.</span>
             </p>
-            <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
-                <a href="index.html?page=privacy" style="color: inherit; text-decoration: none;">Polityka Prywatności</a>
+            <p class="footer-links">
+                <a class="footer-link" href="index.html?page=privacy" title="Kliknij, aby przejść do Polityki Prywatności">Polityka Prywatności</a>
+                <button id="themeToggle" class="footer-link footer-separator" type="button">Zmień motyw: 🌤️</button>
+                <button id="currencyToggle" class="footer-link footer-separator" type="button">Zmień walutę: zł (PLN)</button>
             </p>
         </div>
     </footer>
