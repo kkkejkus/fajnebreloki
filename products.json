@@ -781,6 +781,150 @@
         "genre": "POP"
     },
     {
+        "id": "justin-bieber-believe",
+        "artist": "Justin Bieber",
+        "album": "Believe",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - believe/brelok1.jpg",
+            "media/justin bieber - believe/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "justin-bieber-changes",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - changes/brelok1.jpg",
+            "media/justin bieber - changes/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "justin-bieber-journals",
+        "artist": "Justin Bieber",
+        "album": "Journals",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - journals/brelok1.jpg",
+            "media/justin bieber - journals/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "justin-bieber-justice",
+        "artist": "Justin Bieber",
+        "album": "Justice",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - justice/brelok1.jpg",
+            "media/justin bieber - justice/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "justin-bieber-my-world",
+        "artist": "Justin Bieber",
+        "album": "My World",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - my world/brelok1.jpg",
+            "media/justin bieber - my world/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "justin-bieber-my-world-2",
+        "artist": "Justin Bieber",
+        "album": "My World 2.0",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - my world 2.0/brelok1.jpg",
+            "media/justin bieber - my world 2.0/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "justin-bieber-purpose",
+        "artist": "Justin Bieber",
+        "album": "Purpose",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - purpose/brelok1.jpg",
+            "media/justin bieber - purpose/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "justin-bieber-swag",
+        "artist": "Justin Bieber",
+        "album": "SWAG",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - swag/brelok1.jpg",
+            "media/justin bieber - swag/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "justin-bieber-under-the-mistletoe",
+        "artist": "Justin Bieber",
+        "album": "Under the Mistletoe",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/justin bieber - under the mistletoe/brelok1.jpg",
+            "media/justin bieber - under the mistletoe/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "kanye-west-808s-heartbreak",
         "artist": "Kanye West",
         "album": "808s & Heartbreak",
@@ -1133,6 +1277,70 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "metallica-and-justice-for-all",
+        "artist": "Metallica",
+        "album": "...And Justice for All",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/metallica - ...and justice for all/brelok1.jpg",
+            "media/metallica - ...and justice for all/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
+        "id": "metallica-kill-em-all",
+        "artist": "Metallica",
+        "album": "Kill 'Em All",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/metallica - kill 'em all/brelok1.jpg",
+            "media/metallica - kill 'em all/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
+        "id": "metallica-master-of-puppets",
+        "artist": "Metallica",
+        "album": "Master of Puppets",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/metallica - master of puppets/brelok1.jpg",
+            "media/metallica - master of puppets/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
+        "id": "metallica-self-titled",
+        "artist": "Metallica",
+        "album": "Metallica (Self Titled)",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/metallica - self titled/brelok1.jpg",
+            "media/metallica - self titled/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
         "id": "metro-boomin-heroes-and-villains",
         "artist": "Metro Boomin",
         "album": "Heroes & Villains",
@@ -1430,6 +1638,22 @@
         "images": [
             "media/pono - hołd/brelok1.jpg",
             "media/pono - hołd/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "quebonafide-polnoc-poludnie",
+        "artist": "Quebonafide",
+        "album": "Północ / Południe",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/quebonafide - północ południe/brelok1.jpg",
+            "media/quebonafide - północ południe/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
