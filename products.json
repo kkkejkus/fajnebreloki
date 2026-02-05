@@ -1284,8 +1284,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/metallica - ...and justice for all/brelok1.jpg",
-            "media/metallica - ...and justice for all/brelok2.jpg"
+            "media/metallica - and justice for all/brelok1.jpg",
+            "media/metallica - and justice for all/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -2208,3 +2208,4 @@
         "genre": "HIP-HOP"
     }
 ]
+
