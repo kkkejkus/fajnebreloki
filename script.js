@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Reviews: last update indicator (auto-updating)
-    const REVIEWS_LAST_UPDATED_AT = new Date(2026, 1, 2, 20, 0, 0); // 02.02.2026 20:00 (local time)
+    const REVIEWS_LAST_UPDATED_AT = new Date(2026, 1, 21, 20, 0, 0); // 02.02.2026 20:00 (local time)
 
     const formatTimeAgo = (sinceDate) => {
         const sinceMs = sinceDate?.getTime?.();
@@ -603,6 +603,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <div class="reviews-scroll" id="reviewsScroll" role="list" aria-label="Lista opinii klientów">
                     <article class="review-card" role="listitem" data-index="1.">
+                        <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://marketplace-web-assets.vinted.com/assets/no-photo/user-empty-state.svg" alt="" loading="lazy" decoding="async"></span>
+                        <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
+                        <div class="review-date">13.02.2026</div>
+                        <div class="review-nick">@zuzk***</div>
+                        <div class="review-text">polecam szybką wysyłka super kontakt ze sprzedającym produkt zajebisty</div>
+                    </article>
+                
+                    <article class="review-card" role="listitem" data-index="2.">
+                        <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/03_01492_xp2aDoJTTGHxf93w6hhV6ArQ/f800/1723133082.webp?s=f91edf0af47f577b50a667978a9c16964a080322" alt="" loading="lazy" decoding="async"></span>
+                        <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
+                        <div class="review-date">6.02.2026</div>
+                        <div class="review-nick">@mei.***</div>
+                        <div class="review-text">wszystko super, bardzo miły sprzedawca</div>
+                    </article>
+                
+                    <article class="review-card" role="listitem" data-index="3.">
+                        <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/02_00644_Rn8yBUynhWViQa6A6DdYyE7b/f800/1729016381.webp?s=ed6457ca712aed94dfac102467fff7dafd093fa3" alt="" loading="lazy" decoding="async"></span>
+                        <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
+                        <div class="review-date">6.02.2026</div>
+                        <div class="review-nick">@grav***</div>
+                        <div class="review-text">I bought a custom mini album and i love it, i have the original album as well and it looks spot on 🕷️</div>
+                    </article>
+                
+                    <article class="review-card" role="listitem" data-index="4.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/04_00a64_UG1GYwuxMiUjXGTnxQZUhCV6/f800/1760890077.webp?s=18fd6a45186d2d03a0291c6185b68c565acf41c0" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">1.02.2026</div>
@@ -610,7 +634,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">Brelok świetny</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="2.">
+                    <article class="review-card" role="listitem" data-index="5.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/06_02468_7JeZEwrAumZUWyekH1nqurTa/f800/1769713921.webp?s=480cd98d1b16f019662e4cef0783b26db4da4b85" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">29.01.2026</div>
@@ -618,7 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">The item shipping and packaging were totally alright, and it gives everything what was promised! Looks nice. I can recommend the seller :)</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="3.">
+                    <article class="review-card" role="listitem" data-index="6.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/02_02103_Hpy694GxUGP71iGaXjJ836dq/f800/1752070120.webp?s=e8eeee5a64ee76719837edee43a231fb3d46831d" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">22.01.2026</div>
@@ -626,7 +650,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">Wszystko dobrze 👍 polecam serdecznie 🛍️</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="4.">
+                    <article class="review-card" role="listitem" data-index="7.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/01_01a45_wKsRhTEKvDXN3L1Ww88qV1sq/f800/1756043385.webp?s=da5b99d150ffd586d644b7cc965d3a4cdd42aaaf" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">21.01.2026</div>
@@ -634,7 +658,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">Szybka wysyłka, a brelok piękny i bezpiecznie zapakowany 🫡</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="5.">
+                    <article class="review-card" role="listitem" data-index="8.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/04_020a3_gVLNUWm99yJJh8asfboAtj3L/f800/1733922291.webp?s=d66099a6578db9e8937ebbd2f41544d5210025df" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">19.01.2026</div>
@@ -642,7 +666,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">As described, quality product, fast shipping, properly packaged, good price. 👌</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="6.">
+                    <article class="review-card" role="listitem" data-index="9.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/02_01487_oKDAkxqCf97BNZSaNxuVgiAt/f800/1703950451.webp?s=01412ca5d479c8b354ba7ce4b54d15f6a7d9d16b" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">18.01.2026</div>
@@ -650,36 +674,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">Wszystko top :D</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="7.">
+                    <article class="review-card" role="listitem" data-index="10.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://marketplace-web-assets.vinted.com/assets/no-photo/user-empty-state.svg" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">16.01.2026</div>
                         <div class="review-nick">@juli***</div>
                         <div class="review-text">Szybka wysyłka i sprzedający szybko odpowiadał na moje pytania, polecam😊</div>
-                    </article>
-
-                    <article class="review-card" role="listitem" data-index="8.">
-                        <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/03_02426_1f3uxwMbuh3F3aYeBfsisNFn/f800/1653325558.webp?s=e3b7c24c10776fa185c01187d793e4e95ea5efac" alt="" loading="lazy" decoding="async"></span>
-                        <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
-                        <div class="review-date">10.01.2026</div>
-                        <div class="review-nick">@soli***</div>
-                        <div class="review-text">Bardzo polecam, szyba wysylka i bardzo dobry kontakt ze sprzedającym!:)</div>
-                    </article>
-
-                    <article class="review-card" role="listitem" data-index="9.">
-                        <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/05_0086f_LXfeyckaUPEoF9ruTxSBXa7u/f800/1763225997.webp?s=42612d65acb22ec1d0d3a1bdaa2a31efd9a5aca6" alt="" loading="lazy" decoding="async"></span>
-                        <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
-                        <div class="review-date">8.01.2026</div>
-                        <div class="review-nick">@craz***</div>
-                        <div class="review-text">Wszystko super. Szybka wysyłka. Mega wykonanie 👍👍👍 Gorąco polecam . Produkty wyglądają świetnie</div>
-                    </article>
-
-                    <article class="review-card" role="listitem" data-index="10.">
-                        <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/01_00d67_kr6azN5ZRkcDckyhM5stpMDb/f800/1673458474.webp?s=bf0ddaa70ca803cfdb3e28b0555a3202c6680cd3" alt="" loading="lazy" decoding="async"></span>
-                        <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
-                        <div class="review-date">30.12.2025</div>
-                        <div class="review-nick">@nupl***</div>
-                        <div class="review-text">Szybka wysyłka, fantastyczny brelok. Polecam 🫶</div>
                     </article>
 
                     <a class="review-card review-card-more" role="listitem" href="https://www.vinted.pl/member/91825259?tab=feedback" target="_blank" rel="noopener" title="Zobacz więcej opinii na Vinted">
