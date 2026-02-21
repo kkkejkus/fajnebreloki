@@ -125,6 +125,22 @@
         "genre": "POP"
     },
     {
+        "id": "arctic-monkeys-humbug",
+        "artist": "Arctic Monkeys",
+        "album": "Humbug",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/arctic monkeys - humbug/brelok1.jpg",
+            "media/arctic monkeys - humbug/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "ariana-grande-eternal-sunshine",
         "artist": "Ariana Grande",
         "album": "Eternal Sunshine",
@@ -1037,6 +1053,22 @@
         "genre": "K-POP"
     },
     {
+        "id": "kebyo-dokubari",
+        "artist": "Kebyo",
+        "album": "Dokubari",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/kebyo - dokubari/brelok1.jpg",
+            "media/kebyo - dokubari/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
         "id": "ken-carson-a-great-chaos",
         "artist": "Ken Carson",
         "album": "A Great Chaos",
@@ -1147,6 +1179,38 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "HIP-HOP"
+    },
+    {
+        "id": "lana-del-rey-paradise",
+        "artist": "Lana Del Rey",
+        "album": "Paradise",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/lana del rey - paradise/brelok1.jpg",
+            "media/lana del rey - paradise/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "lana-del-rey-ultraviolence",
+        "artist": "Lana Del Rey",
+        "album": "Ultraviolence",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/lana del rey - ultraviolence/brelok1.jpg",
+            "media/lana del rey - ultraviolence/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
     },
     {
         "id": "mac-miller-swimming",
@@ -2208,4 +2272,3 @@
         "genre": "HIP-HOP"
     }
 ]
-
