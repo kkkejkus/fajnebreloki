@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="reviews-header">
                     <h2 id="reviewsTitle">Opinie klientów</h2>
                     <div class="reviews-summary" aria-label="Podsumowanie opinii">
-                        <span class="reviews-badge"><span class="reviews-num">115+</span> <span class="reviews-label">opinii</span></span>
+                        <span class="reviews-badge"><span class="reviews-num">145+</span> <span class="reviews-label">opinii</span></span>
                         <span class="reviews-dot" aria-hidden="true">•</span>
                         <span class="reviews-badge"><span class="reviews-label">Średnia</span> <span class="reviews-num">5.0</span></span>
                         <span class="reviews-stars" aria-hidden="true">★★★★★</span>
@@ -1805,3 +1805,4 @@ if (hamburger && navLinks) {
         }
     });
 }
+
