@@ -509,6 +509,22 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "eminem-the-relapse",
+        "artist": "Eminem",
+        "album": "The Relapse",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/eminem - the-relapse/brelok1.jpg",
+            "media/eminem - the-relapse/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "esdeekid-rebel",
         "artist": "EsDeeKid",
         "album": "Rebel",
@@ -742,6 +758,22 @@
         "images": [
             "media/hubert. - kolorowe domy/brelok1.jpg",
             "media/hubert. - kolorowe domy/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "ice-cube-the-predator",
+        "artist": "Ice Cube",
+        "album": "The Predator",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/ice cube - the predator/brelok1.jpg",
+            "media/ice cube - the predator/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -1211,6 +1243,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "POP"
+    },
+    {
+        "id": "mac-miller-kids",
+        "artist": "Mac Miller",
+        "album": "K.I.D.S.",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/mac miller - kids/brelok1.jpg",
+            "media/mac miller - kids/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "mac-miller-swimming",
