@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Reviews: last update indicator (auto-updating)
-    const REVIEWS_LAST_UPDATED_AT = new Date(2026, 1, 21, 20, 0, 0); // 02.02.2026 20:00 (local time)
+    const REVIEWS_LAST_UPDATED_AT = new Date(2026, 2, 9, 18, 30, 0); // 02.03.2026 18:30 (local time)
 
     const formatTimeAgo = (sinceDate) => {
         const sinceMs = sinceDate?.getTime?.();
@@ -1805,4 +1805,5 @@ if (hamburger && navLinks) {
         }
     });
 }
+
 
