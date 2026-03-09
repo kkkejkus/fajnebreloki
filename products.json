@@ -516,8 +516,8 @@
         "promoPrice": 30.99,
         "isPolish": false,
         "images": [
-            "media/eminem - the-relapse/brelok1.jpg",
-            "media/eminem - the-relapse/brelok2.jpg"
+            "media/eminem - the relapse/brelok1.jpg",
+            "media/eminem - the relapse/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -2320,3 +2320,4 @@
         "genre": "HIP-HOP"
     }
 ]
+
