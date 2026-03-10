@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Reviews: last update indicator (auto-updating)
-    const REVIEWS_LAST_UPDATED_AT = new Date(2026, 2, 9, 18, 30, 0); // 02.03.2026 18:30 (local time)
+    const REVIEWS_LAST_UPDATED_AT = new Date(2026, 2, 10, 21, 00, 0); // 10.03.2026 21:00 (local time)
 
     const formatTimeAgo = (sinceDate) => {
         const sinceMs = sinceDate?.getTime?.();
@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="reviews-header">
                     <h2 id="reviewsTitle">Opinie klientów</h2>
                     <div class="reviews-summary" aria-label="Podsumowanie opinii">
-                        <span class="reviews-badge"><span class="reviews-num">145+</span> <span class="reviews-label">opinii</span></span>
+                        <span class="reviews-badge"><span class="reviews-num">165+</span> <span class="reviews-label">opinii</span></span>
                         <span class="reviews-dot" aria-hidden="true">•</span>
                         <span class="reviews-badge"><span class="reviews-label">Średnia</span> <span class="reviews-num">5.0</span></span>
                         <span class="reviews-stars" aria-hidden="true">★★★★★</span>
@@ -1805,5 +1805,6 @@ if (hamburger && navLinks) {
         }
     });
 }
+
 
 
