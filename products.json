@@ -1581,6 +1581,38 @@
         "genre": "POP"
     },
     {
+        "id": "oki-era47",
+        "artist": "Oki",
+        "album": "ERA47",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/oki - era47/brelok1.jpg",
+            "media/oki - era47/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "oki-47playground",
+        "artist": "Oki",
+        "album": "47playground",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/oki - 47playground/brelok1.jpg",
+            "media/oki - 47playground/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "olivia-rodrigo-guts",
         "artist": "Olivia Rodrigo",
         "album": "GUTS",
@@ -2320,4 +2352,3 @@
         "genre": "HIP-HOP"
     }
 ]
-
