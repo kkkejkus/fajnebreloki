@@ -451,7 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.currentSortMode = window.currentSortMode || 'NONE'; // NONE, ARTIST_ASC/DESC, ALBUM_ASC/DESC, GENRE_ASC/DESC
 
     // Preload hero images early to avoid a brief blank state on first render
-    ['media/main1.png', 'media/main2.png'].forEach(src => {
+    ['media/main1.jpg', 'media/main2.jpg', 'media/main3.jpg', 'media/main4.jpg'].forEach(src => {
         const img = new Image();
         img.src = src;
     });
@@ -584,8 +584,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>Unikalne breloki w kształcie mini płyt CD z chipem NFC.<br/>Zbliż telefon i odtwarzaj swój ulubiony album w Spotify! 🎧</p>
                 </div>
                 <div class="hero-image">
-                    <img id="heroImageA" class="hero-image-layer active tilt-left" src="media/main1.png" alt="Gotowy brelok" style="cursor: zoom-in;" decoding="async" loading="eager" fetchpriority="high">
-                    <img id="heroImageB" class="hero-image-layer hero-image-layer-overlay tilt-left" src="media/main1.png" alt="Gotowy brelok" aria-hidden="true" style="cursor: zoom-in;" decoding="async" loading="eager" fetchpriority="high">
+                    <img id="heroImageA" class="hero-image-layer active tilt-left" src="media/main1.jpg" alt="Gotowy brelok" style="cursor: zoom-in;" decoding="async" loading="eager" fetchpriority="high">
+                    <img id="heroImageB" class="hero-image-layer hero-image-layer-overlay tilt-left" src="media/main1.jpg" alt="Gotowy brelok" aria-hidden="true" style="cursor: zoom-in;" decoding="async" loading="eager" fetchpriority="high">
                 </div>
             </section>
 
@@ -593,16 +593,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="reviews-header">
                     <h2 id="reviewsTitle">Opinie klientów</h2>
                     <div class="reviews-summary" aria-label="Podsumowanie opinii">
-                        <span class="reviews-badge"><span class="reviews-num">165+</span> <span class="reviews-label">opinii</span></span>
+                        <span class="reviews-badge"><span class="reviews-num">180+</span> <span class="reviews-label">opinii</span></span>
                         <span class="reviews-dot" aria-hidden="true">•</span>
                         <span class="reviews-badge"><span class="reviews-label">Średnia</span> <span class="reviews-num">5.0</span></span>
                         <span class="reviews-stars" aria-hidden="true">★★★★★</span>
                     </div>
-                    <div class="reviews-updated" id="reviewsUpdated" aria-live="polite"></div>
+                    <!-- <div class="reviews-updated" id="reviewsUpdated" aria-live="polite"></div> -->
                 </div>
 
                 <div class="reviews-scroll" id="reviewsScroll" role="list" aria-label="Lista opinii klientów">
                     <article class="review-card" role="listitem" data-index="1.">
+                        <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://marketplace-web-assets.vinted.com/assets/no-photo/user-empty-state.svg" alt="" loading="lazy" decoding="async"></span>
+                        <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
+                        <div class="review-date">27.03.2026</div>
+                        <div class="review-nick">@tris***</div>
+                        <div class="review-text">Wszystko git bardzo szybka wysyłka</div>
+                    </article>
+
+                    <article class="review-card" role="listitem" data-index="2.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://marketplace-web-assets.vinted.com/assets/no-photo/user-empty-state.svg" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">13.02.2026</div>
@@ -610,7 +618,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">polecam szybką wysyłka super kontakt ze sprzedającym produkt zajebisty</div>
                     </article>
                 
-                    <article class="review-card" role="listitem" data-index="2.">
+                    <article class="review-card" role="listitem" data-index="3.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/03_01492_xp2aDoJTTGHxf93w6hhV6ArQ/f800/1723133082.webp?s=f91edf0af47f577b50a667978a9c16964a080322" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">6.02.2026</div>
@@ -618,7 +626,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">wszystko super, bardzo miły sprzedawca</div>
                     </article>
                 
-                    <article class="review-card" role="listitem" data-index="3.">
+                    <article class="review-card" role="listitem" data-index="4.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/02_00644_Rn8yBUynhWViQa6A6DdYyE7b/f800/1729016381.webp?s=ed6457ca712aed94dfac102467fff7dafd093fa3" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">6.02.2026</div>
@@ -626,7 +634,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">I bought a custom mini album and i love it, i have the original album as well and it looks spot on 🕷️</div>
                     </article>
                 
-                    <article class="review-card" role="listitem" data-index="4.">
+                    <article class="review-card" role="listitem" data-index="5.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/04_00a64_UG1GYwuxMiUjXGTnxQZUhCV6/f800/1760890077.webp?s=18fd6a45186d2d03a0291c6185b68c565acf41c0" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">1.02.2026</div>
@@ -634,7 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">Brelok świetny</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="5.">
+                    <article class="review-card" role="listitem" data-index="6.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/06_02468_7JeZEwrAumZUWyekH1nqurTa/f800/1769713921.webp?s=480cd98d1b16f019662e4cef0783b26db4da4b85" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">29.01.2026</div>
@@ -642,7 +650,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">The item shipping and packaging were totally alright, and it gives everything what was promised! Looks nice. I can recommend the seller :)</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="6.">
+                    <article class="review-card" role="listitem" data-index="7.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/02_02103_Hpy694GxUGP71iGaXjJ836dq/f800/1752070120.webp?s=e8eeee5a64ee76719837edee43a231fb3d46831d" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">22.01.2026</div>
@@ -650,7 +658,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">Wszystko dobrze 👍 polecam serdecznie 🛍️</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="7.">
+                    <article class="review-card" role="listitem" data-index="8.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/01_01a45_wKsRhTEKvDXN3L1Ww88qV1sq/f800/1756043385.webp?s=da5b99d150ffd586d644b7cc965d3a4cdd42aaaf" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">21.01.2026</div>
@@ -658,7 +666,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">Szybka wysyłka, a brelok piękny i bezpiecznie zapakowany 🫡</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="8.">
+                    <article class="review-card" role="listitem" data-index="9.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/04_020a3_gVLNUWm99yJJh8asfboAtj3L/f800/1733922291.webp?s=d66099a6578db9e8937ebbd2f41544d5210025df" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">19.01.2026</div>
@@ -666,20 +674,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="review-text">As described, quality product, fast shipping, properly packaged, good price. 👌</div>
                     </article>
 
-                    <article class="review-card" role="listitem" data-index="9.">
+                    <article class="review-card" role="listitem" data-index="10.">
                         <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://images1.vinted.net/t/02_01487_oKDAkxqCf97BNZSaNxuVgiAt/f800/1703950451.webp?s=01412ca5d479c8b354ba7ce4b54d15f6a7d9d16b" alt="" loading="lazy" decoding="async"></span>
                         <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
                         <div class="review-date">18.01.2026</div>
                         <div class="review-nick">@luft***</div>
                         <div class="review-text">Wszystko top :D</div>
-                    </article>
-
-                    <article class="review-card" role="listitem" data-index="10.">
-                        <span class="review-avatar-wrap" aria-hidden="true"><img class="review-avatar" src="https://marketplace-web-assets.vinted.com/assets/no-photo/user-empty-state.svg" alt="" loading="lazy" decoding="async"></span>
-                        <div class="review-stars" aria-label="Ocena 5 na 5">★★★★★</div>
-                        <div class="review-date">16.01.2026</div>
-                        <div class="review-nick">@juli***</div>
-                        <div class="review-text">Szybka wysyłka i sprzedający szybko odpowiadał na moje pytania, polecam😊</div>
                     </article>
 
                     <a class="review-card review-card-more" role="listitem" href="https://www.vinted.pl/member/91825259?tab=feedback" target="_blank" rel="noopener" title="Zobacz więcej opinii na Vinted">
@@ -813,8 +813,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero Image Slider Logic (cross-fade)
         const heroImageA = document.getElementById('heroImageA');
         const heroImageB = document.getElementById('heroImageB');
-        if (heroImageA && heroImageB) {
-            const images = ['media/main1.png', 'media/main2.png'];
+            if (heroImageA && heroImageB) {
+            const images = ['media/main1.jpg', 'media/main2.jpg', 'media/main3.jpg', 'media/main4.jpg'];
             let currentImageIndex = 0;
             let activeLayer = 'A';
 
@@ -829,7 +829,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const applyTilt = (imgEl, index) => {
                 imgEl.classList.remove('tilt-left', 'tilt-right');
-                imgEl.classList.add(index === 1 ? 'tilt-right' : 'tilt-left');
+                const i = Number(index) || 0;
+                imgEl.classList.add((i % 2) === 1 ? 'tilt-right' : 'tilt-left');
             };
 
             // Initialize
@@ -864,7 +865,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setInterval(() => {
                 const nextIndex = (currentImageIndex + 1) % images.length;
                 showHeroIndex(nextIndex);
-            }, 5000);
+            }, 3500);
         }
 
         // Obsługa przełączania widoku
@@ -1805,6 +1806,3 @@ if (hamburger && navLinks) {
         }
     });
 }
-
-
-
