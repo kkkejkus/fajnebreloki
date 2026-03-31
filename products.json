@@ -303,7 +303,7 @@
     {
         "id": "charli-xcx-brat",
         "artist": "Charli XCX",
-        "album": "Brat",
+        "album": "BRAT",
         "price": 35,
         "promoPrice": 30.99,
         "isPolish": false,
@@ -379,6 +379,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "POP"
+    },
+    {
+        "id": "destroy-lonely-ilck",
+        "artist": "Destroy Lonely",
+        "album": "If Looks Could Kill",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/destroy lonely - ilck/brelok1.jpg",
+            "media/destroy lonely - ilck/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "drake-nothing-was-the-same",
@@ -1789,6 +1805,54 @@
         "genre": "HIP-HOP"
     },
     {
+        "id": "pro8l3m-art-brut-2",
+        "artist": "PRO8L3M",
+        "album": "Art Brut 2",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/pro8l3m - art brut 2/brelok1.jpg",
+            "media/pro8l3m - art brut 2/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "pro8l3m-ground-zero-mixtape",
+        "artist": "PRO8L3M",
+        "album": "Ground Zero Mixtape",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/pro8l3m - ground zero mixtape/brelok1.jpg",
+            "media/pro8l3m - ground zero mixtape/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "quebonafide-eklektyka",
+        "artist": "Quebonafide",
+        "album": "Eklektyka",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/quebonafide - eklektyka/brelok1.jpg",
+            "media/quebonafide - eklektyka/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "quebonafide-polnoc-poludnie",
         "artist": "Quebonafide",
         "album": "Północ / Południe",
@@ -1830,6 +1894,22 @@
         "images": [
             "media/raye - my 21st century blues/brelok1.jpg",
             "media/raye - my 21st century blues/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "raye-tmmch",
+        "artist": "RAYE",
+        "album": "THIS MUSIC MAY CONTAIN HOPE.",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/raye - this music may contain hope/brelok1.jpg",
+            "media/raye - this music may contain hope/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
@@ -2345,6 +2425,22 @@
         "images": [
             "media/xxxtentacion - 17/brelok1.jpg",
             "media/xxxtentacion - 17/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
+        "id": "zillakami-dogboy",
+        "artist": "ZillaKami",
+        "album": "Dog Boy",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/zillakami - dog boy/brelok1.jpg",
+            "media/zillakami - dog boy/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
