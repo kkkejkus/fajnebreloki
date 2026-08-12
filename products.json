@@ -141,6 +141,22 @@
         "genre": "POP"
     },
     {
+        "id": "arctic-monkeys-whatever",
+        "artist": "Arctic Monkeys",
+        "album": "Whatever People Say I Am, That's What I'm Not",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/arctic monkeys - whatever people say i am/brelok1.jpg",
+            "media/arctic monkeys - whatever people say i am/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "ariana-grande-eternal-sunshine",
         "artist": "Ariana Grande",
         "album": "Eternal Sunshine",
@@ -299,6 +315,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "POP"
+    },
+    {
+        "id": "bmth-sempiternal",
+        "artist": "Bring Me The Horizon",
+        "album": "Sempiternal",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/bmth - sempiternal/brelok1.jpg",
+            "media/bmth - sempiternal/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
     },
     {
         "id": "charli-xcx-brat",
@@ -1261,6 +1293,23 @@
         "genre": "POP"
     },
     {
+        "id": "linkin-park-hybrid-theory",
+        "artist": "Linkin Park",
+        "album": "Hybrid Theory",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "bestseller": true,
+        "images": [
+            "media/linkin park - hybrid theory/brelok1.jpg",
+            "media/linkin park - hybrid theory/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
+    },
+    {
         "id": "mac-miller-kids",
         "artist": "Mac Miller",
         "album": "K.I.D.S.",
@@ -2189,6 +2238,40 @@
         "genre": "POP"
     },
     {
+        "id": "pc-dolls-doll-domination",
+        "artist": "The Pussycat Dolls",
+        "album": "Doll Domination",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "bestseller": true,
+        "images": [
+            "media/the pussycat dolls - doll domination/brelok1.jpg",
+            "media/the pussycat dolls - doll domination/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "pc-dolls-pcd",
+        "artist": "The Pussycat Dolls",
+        "album": "PCD",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "bestseller": true,
+        "images": [
+            "media/the pussycat dolls - pcd/brelok1.jpg",
+            "media/the pussycat dolls - pcd/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "the-weeknd-after-hours",
         "artist": "The Weeknd",
         "album": "After Hours",
@@ -2215,6 +2298,74 @@
         "images": [
             "media/the weeknd - beauty behind the madness/brelok1.jpg",
             "media/the weeknd - beauty behind the madness/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "the-weeknd-dawn-fm",
+        "artist": "The Weeknd",
+        "album": "Dawn FM",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "bestseller": true,
+        "images": [
+            "media/the weeknd - dawn fm/brelok1.jpg",
+            "media/the weeknd - dawn fm/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "the-weeknd-hurry-up-tomorrow",
+        "artist": "The Weeknd",
+        "album": "Hurry Up Tomorrow",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "bestseller": true,
+        "images": [
+            "media/the weeknd - hurry up tomorrow/brelok1.jpg",
+            "media/the weeknd - hurry up tomorrow/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "the-weeknd-my-dear-melancholy",
+        "artist": "The Weeknd",
+        "album": "My Dear Melancholy",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "bestseller": true,
+        "images": [
+            "media/the weeknd - my dear melancholy/brelok1.jpg",
+            "media/the weeknd - my dear melancholy/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
+        "id": "the-weeknd-trilogy",
+        "artist": "The Weeknd",
+        "album": "Trilogy",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "bestseller": true,
+        "images": [
+            "media/the weeknd - trilogy/brelok1.jpg",
+            "media/the weeknd - trilogy/brelok2.jpg"
         ],
         "vintedUrl": "https://www.vinted.pl/member/91825259",
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
