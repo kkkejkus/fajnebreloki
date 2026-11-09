@@ -13,6 +13,22 @@
         ]
     },
     {
+        "id": "adam-lambert-the-original-high",
+        "artist": "Adam Lambert",
+        "album": "The Original High",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/adam lambert - the original high/brelok1.jpg",
+            "media/adam lambert - the original high/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "POP"
+    },
+    {
         "id": "asap-rocky-at-long-last-asap",
         "artist": "A$AP Rocky",
         "album": "At. Long. Last. A$AP",
@@ -235,6 +251,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "POP"
+    },
+    {
+        "id": "bad-omens-tdopom",
+        "artist": "Bad Omens",
+        "album": "The Death of Peace of Mind",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": false,
+        "images": [
+            "media/bad omens - the death of peace of mind/brelok1.jpg",
+            "media/bad omens - the death of peace of mind/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "ROCK"
     },
     {
         "id": "bedoes-lanek-opowiesci",
@@ -1710,6 +1742,22 @@
         "genre": "POP"
     },
     {
+        "id": "otsochodzi-riott",
+        "artist": "Otsochodzi",
+        "album": "Riott",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/otsochodzi - riott/brelok1.jpg",
+            "media/otsochodzi - riott/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
+    },
+    {
         "id": "paktofonika-kinematografia",
         "artist": "Paktofonika",
         "album": "Kinematografia",
@@ -2270,6 +2318,22 @@
         "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
         "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
         "genre": "POP"
+    },
+    {
+        "id": "taco-hemingway-umowa-o-dzielo",
+        "artist": "Taco Hemingway",
+        "album": "Umowa o dzieło",
+        "price": 35,
+        "promoPrice": 30.99,
+        "isPolish": true,
+        "images": [
+            "media/taco hemingway - umowa o dzielo/brelok1.jpg",
+            "media/taco hemingway - umowa o dzielo/brelok2.jpg"
+        ],
+        "vintedUrl": "https://www.vinted.pl/member/91825259",
+        "olxUrl": "https://www.olx.pl/oferty/uzytkownik/3GKup",
+        "allegroUrl": "https://allegrolokalnie.pl/uzytkownik/the_kakus",
+        "genre": "HIP-HOP"
     },
     {
         "id": "the-weeknd-after-hours",
