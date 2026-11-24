@@ -3,8 +3,8 @@
         "id": "custom-brelok",
         "name": "PERSONALIZOWANY ALBUM✨",
         "artist": "Custom",
-        "price": 39,
-        "promoPrice": 33.99,
+        "price": 40,
+        "promoPrice": 38.90,
         "isCustom": true,
         "description": "Marzy Ci się <u>brelok z Twoim ulubionym</u>, niszowym albumem? A może chcesz sprawić komuś wyjątkowy prezent? <strong>Zamów brelok na wymiar!</strong>\n\n🎶 Ręcznie stworzony brelok (5cm×4.5cm×0.8cm) z okładką wybranego przez Ciebie albumu.\n💿 Wyposażony w chip NFC, który po zbliżeniu telefonu automatycznie otwiera album w Spotify.\n📱 W wiadomości przy zakupie możesz wskazać inną aplikację — np. Apple Music.\n\n📀 Jeśli interesuje cię konkretny album, sprawdź pozostałe oferty — być może jest już dostępny!\n💰 Przy zakupie kilku breloków <b>duża promka!</b>\n\n📝 <u>Wypełnij formularz</u> poniżej, a odezwę się do Ciebie ze szczegółami!",
         "images": [
@@ -17,7 +17,7 @@
         "artist": "Adam Lambert",
         "album": "The Original High",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/adam lambert - the original high/brelok1.jpg",
@@ -33,7 +33,7 @@
         "artist": "A$AP Rocky",
         "album": "At. Long. Last. A$AP",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/asap rocky - at long last asap/brelok1.jpg",
@@ -49,7 +49,7 @@
         "artist": "A$AP Rocky",
         "album": "Don't Be Dumb",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/asap rocky - dont be dumb/brelok1.jpg",
@@ -65,7 +65,7 @@
         "artist": "A$AP Rocky",
         "album": "Live. Love. A$AP",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/asap rocky - live love asap/brelok1.jpg",
@@ -81,7 +81,7 @@
         "artist": "A$AP Rocky",
         "album": "Long. Live. A$AP",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/asap rocky - long live asap/brelok1.jpg",
@@ -97,7 +97,7 @@
         "artist": "A$AP Rocky",
         "album": "Testing",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/asap rocky - testing/brelok1.jpg",
@@ -113,7 +113,7 @@
         "artist": "Addison Rae",
         "album": "Addison",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/addison rae - addison/brelok1.jpg",
@@ -129,7 +129,7 @@
         "artist": "Arctic Monkeys",
         "album": "AM",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/arctic monkeys - am/brelok1.jpg",
@@ -145,7 +145,7 @@
         "artist": "Arctic Monkeys",
         "album": "Humbug",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/arctic monkeys - humbug/brelok1.jpg",
@@ -161,7 +161,7 @@
         "artist": "Arctic Monkeys",
         "album": "Whatever People Say I Am, That's What I'm Not",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/arctic monkeys - whatever people say i am/brelok1.jpg",
@@ -177,7 +177,7 @@
         "artist": "Ariana Grande",
         "album": "Eternal Sunshine",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/ariana grande - eternal sunshine/brelok1.jpg",
@@ -193,7 +193,7 @@
         "artist": "Ariana Grande",
         "album": "Positions",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/ariana grande - positions/brelok1.jpg",
@@ -209,7 +209,7 @@
         "artist": "Ariana Grande",
         "album": "thank u. next",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/ariana grande - thank u. next/brelok1.jpg",
@@ -225,7 +225,7 @@
         "artist": "Bad Bunny",
         "album": "Debi Tirar Mas Fotos",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/bad bunny - debi tirar mas fotos/brelok1.jpg",
@@ -241,7 +241,7 @@
         "artist": "Bad Bunny",
         "album": "Un Verano Sin Ti",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/bad bunny - un verano sin ti/brelok1.jpg",
@@ -257,7 +257,7 @@
         "artist": "Bad Omens",
         "album": "The Death of Peace of Mind",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/bad omens - the death of peace of mind/brelok1.jpg",
@@ -273,7 +273,7 @@
         "artist": "Bedoes & Lanek",
         "album": "Opowieści z Doliny Smoków",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/bedoes & lanek - opowiesci z doliny smokow/brelok1.jpg",
@@ -289,7 +289,7 @@
         "artist": "Big Time Rush",
         "album": "Another Life",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/big time rush - another life/brelok1.jpg",
@@ -305,7 +305,7 @@
         "artist": "Billie Eilish",
         "album": "Happier Than Ever",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/billie eilish - happier than ever/brelok1.jpg",
@@ -321,7 +321,7 @@
         "artist": "Billie Eilish",
         "album": "Hit Me Hard and Soft",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/billie eilish - hit me hard and soft/brelok1.jpg",
@@ -337,7 +337,7 @@
         "artist": "Billie Eilish",
         "album": "When We All Fall Asleep, Where Do We Go?",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/billie eilish - when we all fall asleep, where do we go/brelok1.jpg",
@@ -353,7 +353,7 @@
         "artist": "Bring Me The Horizon",
         "album": "Sempiternal",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/bmth - sempiternal/brelok1.jpg",
@@ -369,7 +369,7 @@
         "artist": "Charli XCX",
         "album": "BRAT",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/charli xcx - brat/brelok1.jpg",
@@ -385,7 +385,7 @@
         "artist": "Chase Atlantic",
         "album": "Chase Atlantic (Self Titled)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/chase atlantic - self titled/brelok1.jpg",
@@ -401,7 +401,7 @@
         "artist": "Childish Gambino",
         "album": "Awaken, My Love!",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/childish gambino - awaken, my love!/brelok1.jpg",
@@ -417,7 +417,7 @@
         "artist": "Childish Gambino",
         "album": "Because the Internet",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/childish gambino - because the internet/brelok1.jpg",
@@ -433,7 +433,7 @@
         "artist": "Childish Gambino",
         "album": "Camp",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/childish gambino - camp/brelok1.jpg",
@@ -449,7 +449,7 @@
         "artist": "Deftones",
         "album": "Around the Fur",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/deftones - around the fur/brelok1.jpg",
@@ -465,7 +465,7 @@
         "artist": "Destroy Lonely",
         "album": "If Looks Could Kill",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/destroy lonely - ilck/brelok1.jpg",
@@ -481,7 +481,7 @@
         "artist": "Drake",
         "album": "Nothing Was the Same (Deluxe)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/drake - nothing was the same (deluxe)/brelok1.jpg",
@@ -497,7 +497,7 @@
         "artist": "Drake",
         "album": "Scorpion",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/drake - scorpion/brelok1.jpg",
@@ -513,7 +513,7 @@
         "artist": "Drake",
         "album": "Take Care",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/drake - take care/brelok1.jpg",
@@ -529,7 +529,7 @@
         "artist": "Drake",
         "album": "Views",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/drake - views/brelok1.jpg",
@@ -545,7 +545,7 @@
         "artist": "Dua Lipa",
         "album": "Dua Lipa (Self Titled)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/dua lipa - self titled/brelok1.jpg",
@@ -561,7 +561,7 @@
         "artist": "Dua Lipa",
         "album": "Future Nostalgia",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/dua lipa - future nostalgia/brelok1.jpg",
@@ -577,7 +577,7 @@
         "artist": "Dua Lipa",
         "album": "Radical Optimism",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/dua lipa - radical optimism/brelok1.jpg",
@@ -593,7 +593,7 @@
         "artist": "Eazy-E",
         "album": "Eazy-Duz-It",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/eazy-e - eazy-duz-it/brelok1.jpg",
@@ -609,7 +609,7 @@
         "artist": "Eminem",
         "album": "The Relapse",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/eminem - the relapse/brelok1.jpg",
@@ -625,7 +625,7 @@
         "artist": "EsDeeKid",
         "album": "Rebel",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/esdeekid - rebel/brelok1.jpg",
@@ -641,7 +641,7 @@
         "artist": "Future",
         "album": "DS2",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/future - ds2/brelok1.jpg",
@@ -657,7 +657,7 @@
         "artist": "Future",
         "album": "Monster",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/future - monster/brelok1.jpg",
@@ -673,7 +673,7 @@
         "artist": "Future & Metro Boomin",
         "album": "We Don't Trust You",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/future & metro boomin - wdty/brelok1.jpg",
@@ -689,7 +689,7 @@
         "artist": "Future & Metro Boomin",
         "album": "We Still Don't Trust You",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/future & metro boomin - wsdty/brelok1.jpg",
@@ -705,7 +705,7 @@
         "artist": "G i-dle",
         "album": "I Feel",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/(g)i-dle - i feel/brelok1.jpg",
@@ -721,7 +721,7 @@
         "artist": "Gojira",
         "album": "From Mars to Sirius",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/gojira - from mars to sirius/brelok1.jpg",
@@ -737,7 +737,7 @@
         "artist": "Gorillaz",
         "album": "Demon Days",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/gorillaz - demon days/brelok1.jpg",
@@ -753,7 +753,7 @@
         "artist": "Gorillaz",
         "album": "Gorillaz (Self Titled)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/gorillaz - self titled/brelok1.jpg",
@@ -769,7 +769,7 @@
         "artist": "Gorillaz",
         "album": "Song Machine",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/gorillaz - song machine/brelok1.jpg",
@@ -785,7 +785,7 @@
         "artist": "Green Day",
         "album": "American Idiot",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/green day - american idiot/brelok1.jpg",
@@ -801,7 +801,7 @@
         "artist": "Harry Styles",
         "album": "Fine Line",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/harry styles - fine line/brelok1.jpg",
@@ -817,7 +817,7 @@
         "artist": "Harry Styles",
         "album": "Harry's House",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/harry styles - harry's house/brelok1.jpg",
@@ -833,7 +833,7 @@
         "artist": "Harry Styles",
         "album": "Harry Styles (Self Titled)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/harry styles - self titled/brelok1.jpg",
@@ -849,7 +849,7 @@
         "artist": "Hubert.",
         "album": "Kolorowe Domy",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/hubert. - kolorowe domy/brelok1.jpg",
@@ -865,7 +865,7 @@
         "artist": "Ice Cube",
         "album": "The Predator",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/ice cube - the predator/brelok1.jpg",
@@ -881,7 +881,7 @@
         "artist": "Illit",
         "album": "Not Cute Anymore",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/illit - not cute anymore/brelok1.jpg",
@@ -897,7 +897,7 @@
         "artist": "J. Cole",
         "album": "2014 Forest Hills Drive",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/j cole - 2014 forest hills drive/brelok1.jpg",
@@ -913,7 +913,7 @@
         "artist": "Julia Rocka",
         "album": "Gorset",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/julia rocka - gorset/brelok1.jpg",
@@ -929,7 +929,7 @@
         "artist": "Justin Bieber",
         "album": "Believe",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - believe/brelok1.jpg",
@@ -945,7 +945,7 @@
         "artist": "Justin Bieber",
         "album": "Changes",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - changes/brelok1.jpg",
@@ -961,7 +961,7 @@
         "artist": "Justin Bieber",
         "album": "Journals",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - journals/brelok1.jpg",
@@ -977,7 +977,7 @@
         "artist": "Justin Bieber",
         "album": "Justice",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - justice/brelok1.jpg",
@@ -993,7 +993,7 @@
         "artist": "Justin Bieber",
         "album": "My World",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - my world/brelok1.jpg",
@@ -1009,7 +1009,7 @@
         "artist": "Justin Bieber",
         "album": "My World 2.0",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - my world 2.0/brelok1.jpg",
@@ -1025,7 +1025,7 @@
         "artist": "Justin Bieber",
         "album": "Purpose",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - purpose/brelok1.jpg",
@@ -1041,7 +1041,7 @@
         "artist": "Justin Bieber",
         "album": "SWAG",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - swag/brelok1.jpg",
@@ -1057,7 +1057,7 @@
         "artist": "Justin Bieber",
         "album": "Under the Mistletoe",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/justin bieber - under the mistletoe/brelok1.jpg",
@@ -1073,7 +1073,7 @@
         "artist": "Kanye West",
         "album": "808s & Heartbreak",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kanye - 808 & heartbreak/brelok1.jpg",
@@ -1089,7 +1089,7 @@
         "artist": "Kanye West",
         "album": "Graduation",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kanye - graduation/brelok1.jpg",
@@ -1105,7 +1105,7 @@
         "artist": "Kanye West & Kid Cudi",
         "album": "Kids See Ghosts",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kid cudi & kanye west - kids see ghosts/brelok1.jpg",
@@ -1121,7 +1121,7 @@
         "artist": "Kanye West",
         "album": "My Beautiful Dark Twisted Fantasy",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kanye - mbdtf/brelok1.jpg",
@@ -1137,7 +1137,7 @@
         "artist": "Kanye West",
         "album": "The College Dropout",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kanye - the college dropout/brelok1.jpg",
@@ -1153,7 +1153,7 @@
         "artist": "Kanye West & Ty Dolla $ign",
         "album": "Vultures 1",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kanye & ty dolla sign - vultures 1/brelok1.jpg",
@@ -1169,7 +1169,7 @@
         "artist": "Katseye",
         "album": "Beautiful Chaos",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/katseye - beautiful chaos/brelok1.jpg",
@@ -1185,7 +1185,7 @@
         "artist": "Kebyo",
         "album": "Dokubari",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kebyo - dokubari/brelok1.jpg",
@@ -1201,7 +1201,7 @@
         "artist": "Ken Carson",
         "album": "A Great Chaos",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/ken carson - a great chaos/brelok1.jpg",
@@ -1217,7 +1217,7 @@
         "artist": "Ken Carson",
         "album": "More Chaos",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/ken carson - more chaos/brelok1.jpg",
@@ -1233,7 +1233,7 @@
         "artist": "Kendrick Lamar",
         "album": "DAMN.",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kendrick lamar - damn/brelok1.jpg",
@@ -1249,7 +1249,7 @@
         "artist": "Kendrick Lamar",
         "album": "GNX",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kendrick lamar - gnx/brelok1.jpg",
@@ -1265,7 +1265,7 @@
         "artist": "Kendrick Lamar",
         "album": "good kid, m.A.A.d city",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kendrick lamar - gkmc/brelok1.jpg",
@@ -1281,7 +1281,7 @@
         "artist": "Kendrick Lamar",
         "album": "Mr. Morale & The Big Steppers",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kendrick lamar - mr. morale & the big steppers/brelok1.jpg",
@@ -1297,7 +1297,7 @@
         "artist": "Kendrick Lamar",
         "album": "To Pimp a Butterfly",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/kendrick lamar - tpab/brelok1.jpg",
@@ -1313,7 +1313,7 @@
         "artist": "Lana Del Rey",
         "album": "Paradise",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/lana del rey - paradise/brelok1.jpg",
@@ -1329,7 +1329,7 @@
         "artist": "Lana Del Rey",
         "album": "Ultraviolence",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/lana del rey - ultraviolence/brelok1.jpg",
@@ -1345,7 +1345,7 @@
         "artist": "Linkin Park",
         "album": "Hybrid Theory",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -1362,7 +1362,7 @@
         "artist": "Mac Miller",
         "album": "K.I.D.S.",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/mac miller - kids/brelok1.jpg",
@@ -1378,7 +1378,7 @@
         "artist": "Mac Miller",
         "album": "Swimming",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/mac miller - swimming/brelok1.jpg",
@@ -1394,7 +1394,7 @@
         "artist": "Mac Miller",
         "album": "The Divine Feminine",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/mac miller - the divine feminine/brelok1.jpg",
@@ -1410,7 +1410,7 @@
         "artist": "Madmans Esprit",
         "album": "Dandelions",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/madmans esprit - dandelions/brelok1.jpg",
@@ -1426,7 +1426,7 @@
         "artist": "Malik Montana",
         "album": "Import/Export",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/malik montana - import export/brelok1.jpg",
@@ -1442,7 +1442,7 @@
         "artist": "Marilyn Manson",
         "album": "The Pale Emperor",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/marilyn manson - the pale emperor/brelok1.jpg",
@@ -1458,7 +1458,7 @@
         "artist": "Mata & Oki",
         "album": "3347",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/mata & oki - 3347/brelok1.jpg",
@@ -1474,7 +1474,7 @@
         "artist": "Mata",
         "album": "100 dni do matury",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/mata - 100 dni do matury/brelok1.jpg",
@@ -1490,7 +1490,7 @@
         "artist": "Mata",
         "album": "2039 Złote Piaski",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/mata - 2039 złote piaski/brelok1.jpg",
@@ -1506,7 +1506,7 @@
         "artist": "Mata",
         "album": "2040: SŁAWA",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/mata - 2040 slawa/brelok1.jpg",
@@ -1522,7 +1522,7 @@
         "artist": "Mata",
         "album": "Młody Matczak",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/mata - młody matczak/brelok1.jpg",
@@ -1538,7 +1538,7 @@
         "artist": "Metallica",
         "album": "...And Justice for All",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/metallica - and justice for all/brelok1.jpg",
@@ -1554,7 +1554,7 @@
         "artist": "Metallica",
         "album": "Kill 'Em All",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/metallica - kill 'em all/brelok1.jpg",
@@ -1570,7 +1570,7 @@
         "artist": "Metallica",
         "album": "Master of Puppets",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/metallica - master of puppets/brelok1.jpg",
@@ -1586,7 +1586,7 @@
         "artist": "Metallica",
         "album": "Metallica (Self Titled)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/metallica - self titled/brelok1.jpg",
@@ -1602,7 +1602,7 @@
         "artist": "Metro Boomin",
         "album": "Heroes & Villains",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/metro boomin - heroes & villains/brelok1.jpg",
@@ -1618,7 +1618,7 @@
         "artist": "Michael Jackson",
         "album": "Invincible",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/michael jackson - invincible/brelok1.jpg",
@@ -1634,7 +1634,7 @@
         "artist": "Michael Jackson",
         "album": "Michael",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/michael jackson - michael/brelok1.jpg",
@@ -1650,7 +1650,7 @@
         "artist": "Michael Jackson",
         "album": "Thriller",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/michael jackson - thriller/brelok1.jpg",
@@ -1666,7 +1666,7 @@
         "artist": "N.E.R.D",
         "album": "Fly or Die",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/nerd - fly or die/brelok1.jpg",
@@ -1682,7 +1682,7 @@
         "artist": "Nirvana",
         "album": "In Utero",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/nirvana - in utero/brelok1.jpg",
@@ -1698,7 +1698,7 @@
         "artist": "Nirvana",
         "album": "Nevermind",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/nirvana - nevermind/brelok1.jpg",
@@ -1714,7 +1714,7 @@
         "artist": "Oasis",
         "album": "(What's the Story) Morning Glory?",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/oasis - (what's the story) morning glory/brelok1.jpg",
@@ -1730,7 +1730,7 @@
         "artist": "Oki",
         "album": "ERA47",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/oki - era47/brelok1.jpg",
@@ -1746,7 +1746,7 @@
         "artist": "Oki",
         "album": "47playground",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/oki - 47playground/brelok1.jpg",
@@ -1762,7 +1762,7 @@
         "artist": "Olivia Rodrigo",
         "album": "GUTS",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/olivia rodrigo - guts/brelok1.jpg",
@@ -1778,7 +1778,7 @@
         "artist": "Olivia Rodrigo",
         "album": "SOUR",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/olivia rodrigo - sour/brelok1.jpg",
@@ -1794,7 +1794,7 @@
         "artist": "Otsochodzi",
         "album": "Riott",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/otsochodzi - riott/brelok1.jpg",
@@ -1810,7 +1810,7 @@
         "artist": "Paktofonika",
         "album": "Kinematografia",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/paktofonika - kinematografia/brelok1.jpg",
@@ -1826,7 +1826,7 @@
         "artist": "Playboi Carti",
         "album": "Die Lit",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/pbc - die lit/brelok1.jpg",
@@ -1842,7 +1842,7 @@
         "artist": "PinkPantheress",
         "album": "Fancy That",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/pinkpantheress - fancy that/brelok1.jpg",
@@ -1858,7 +1858,7 @@
         "artist": "PinkPantheress",
         "album": "Heaven Knows",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/pinkpantheress - heaven knows/brelok1.jpg",
@@ -1874,7 +1874,7 @@
         "artist": "PinkPantheress",
         "album": "to hell with it",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/pinkpantheress - to hell with it/brelok1.jpg",
@@ -1890,7 +1890,7 @@
         "artist": "Playboi Carti",
         "album": "MUSIC",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/pbc - music/brelok1.jpg",
@@ -1906,7 +1906,7 @@
         "artist": "Playboi Carti",
         "album": "Playboi Carti (Self Titled)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/pbc - self titled/brelok1.jpg",
@@ -1922,7 +1922,7 @@
         "artist": "Playboi Carti",
         "album": "Whole Lotta Red",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/pbc - whole lotta red/brelok1.jpg",
@@ -1938,7 +1938,7 @@
         "artist": "Pono",
         "album": "Hołd",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/pono - hołd/brelok1.jpg",
@@ -1954,7 +1954,7 @@
         "artist": "PRO8L3M",
         "album": "Art Brut 2",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/pro8l3m - art brut 2/brelok1.jpg",
@@ -1970,7 +1970,7 @@
         "artist": "PRO8L3M",
         "album": "Ground Zero Mixtape",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/pro8l3m - ground zero mixtape/brelok1.jpg",
@@ -1986,7 +1986,7 @@
         "artist": "Quebonafide",
         "album": "Eklektyka",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/quebonafide - eklektyka/brelok1.jpg",
@@ -2002,7 +2002,7 @@
         "artist": "Quebonafide",
         "album": "Północ / Południe",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/quebonafide - północ południe/brelok1.jpg",
@@ -2018,7 +2018,7 @@
         "artist": "Queen",
         "album": "Bohemian Rhapsody",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/queen - bohemian rhapsody/brelok1.jpg",
@@ -2034,7 +2034,7 @@
         "artist": "RAYE",
         "album": "My 21st Century Blues",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/raye - my 21st century blues/brelok1.jpg",
@@ -2050,7 +2050,7 @@
         "artist": "RAYE",
         "album": "THIS MUSIC MAY CONTAIN HOPE.",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/raye - this music may contain hope/brelok1.jpg",
@@ -2066,7 +2066,7 @@
         "artist": "Rihanna",
         "album": "Loud",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/rihanna - loud/brelok1.jpg",
@@ -2082,7 +2082,7 @@
         "artist": "Rihanna",
         "album": "Talk Talk Talk",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/rihanna - talk talk talk/brelok1.jpg",
@@ -2098,7 +2098,7 @@
         "artist": "Sabrina Carpenter",
         "album": "Man's Best Friend",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/sabrina carpenter - man's best friend/brelok1.jpg",
@@ -2114,7 +2114,7 @@
         "artist": "Sabrina Carpenter",
         "album": "Short n' Sweet",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/sabrina carpenter - short n' sweet/brelok1.jpg",
@@ -2130,7 +2130,7 @@
         "artist": "Skolim",
         "album": "Król Latino",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/skolim - krol latino/brelok1.jpg",
@@ -2146,7 +2146,7 @@
         "artist": "Smolasty & Sylwia Grzeszczak",
         "album": "Połowa Mnie",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/smolasty & sylwia grzeszczak - polowa mnie/brelok1.jpg",
@@ -2162,7 +2162,7 @@
         "artist": "Soko",
         "album": "Feel Feelings",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/soko - feel feelings/brelok1.jpg",
@@ -2178,7 +2178,7 @@
         "artist": "SZA",
         "album": "SOS",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/sza - sos/brelok1.jpg",
@@ -2194,7 +2194,7 @@
         "artist": "Szpaku",
         "album": "Uzumaki Forma Ostateczna",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/szpaku - uzumaki forma ostateczna/brelok1.jpg",
@@ -2210,7 +2210,7 @@
         "artist": "Tame Impala",
         "album": "Currents",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tame impala - currents/brelok1.jpg",
@@ -2226,7 +2226,7 @@
         "artist": "Tame Impala",
         "album": "Deadbeat",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tame impala - deadbeat/brelok1.jpg",
@@ -2242,7 +2242,7 @@
         "artist": "Tame Impala",
         "album": "The Slow Rush",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tame impala - the slow rush/brelok1.jpg",
@@ -2258,7 +2258,7 @@
         "artist": "Tate McRae",
         "album": "So Close To What",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tate mcrae - so close to what/brelok1.jpg",
@@ -2274,7 +2274,7 @@
         "artist": "Tate McRae",
         "album": "Think Later",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tate mcrae - think later/brelok1.jpg",
@@ -2290,7 +2290,7 @@
         "artist": "Taylor Swift",
         "album": "1989 (Taylor's Version)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/taylor swift - 1989 taylor's version/brelok1.jpg",
@@ -2306,7 +2306,7 @@
         "artist": "Taylor Swift",
         "album": "Lover",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/taylor swift - lover/brelok1.jpg",
@@ -2322,7 +2322,7 @@
         "artist": "Taylor Swift",
         "album": "The Life of a Showgirl",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/taylor swift - the life of a showgirl/brelok1.jpg",
@@ -2338,7 +2338,7 @@
         "artist": "The Pussycat Dolls",
         "album": "Doll Domination",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2355,7 +2355,7 @@
         "artist": "The Pussycat Dolls",
         "album": "PCD",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2372,7 +2372,7 @@
         "artist": "Taco Hemingway",
         "album": "Umowa o dzieło",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/taco hemingway - umowa o dzielo/brelok1.jpg",
@@ -2388,7 +2388,7 @@
         "artist": "The Weeknd",
         "album": "After Hours",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2405,7 +2405,7 @@
         "artist": "The Weeknd",
         "album": "Beauty Behind The Madness",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/the weeknd - beauty behind the madness/brelok1.jpg",
@@ -2421,7 +2421,7 @@
         "artist": "The Weeknd",
         "album": "Dawn FM",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2438,7 +2438,7 @@
         "artist": "The Weeknd",
         "album": "Hurry Up Tomorrow",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2455,7 +2455,7 @@
         "artist": "The Weeknd",
         "album": "My Dear Melancholy",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2472,7 +2472,7 @@
         "artist": "The Weeknd",
         "album": "Trilogy",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2489,7 +2489,7 @@
         "artist": "The Weeknd",
         "album": "Starboy",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/the weeknd - starboy/brelok1.jpg",
@@ -2505,7 +2505,7 @@
         "artist": "Travis Scott",
         "album": "Astroworld",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2522,7 +2522,7 @@
         "artist": "Travis Scott",
         "album": "Rodeo",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/travis scott - rodeo/brelok1.jpg",
@@ -2538,7 +2538,7 @@
         "artist": "Travis Scott",
         "album": "Utopia",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "bestseller": true,
         "images": [
@@ -2555,7 +2555,7 @@
         "artist": "TV Girl",
         "album": "Who Really Cares",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tv girl - who really cares/brelok1.jpg",
@@ -2571,7 +2571,7 @@
         "artist": "Tyla",
         "album": "Tyla (Self Titled)",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tyla - tyla/brelok1.jpg",
@@ -2587,7 +2587,7 @@
         "artist": "Tyler, The Creator",
         "album": "Call Me If You Get Lost",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tyler - cmiygl/brelok1.jpg",
@@ -2603,7 +2603,7 @@
         "artist": "Tyler, The Creator",
         "album": "Chromakopia",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tyler - chromakopia/brelok1.jpg",
@@ -2619,7 +2619,7 @@
         "artist": "Tyler, The Creator",
         "album": "Don't Tap The Glass",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tyler - dttg/brelok1.jpg",
@@ -2635,7 +2635,7 @@
         "artist": "Tyler, The Creator",
         "album": "Flower Boy",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tyler - flower boy/brelok1.jpg",
@@ -2651,7 +2651,7 @@
         "artist": "Tyler, The Creator",
         "album": "IGOR",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/tyler - igor/brelok1.jpg",
@@ -2667,7 +2667,7 @@
         "artist": "Whitechapel",
         "album": "Kin",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/whitechapel - kin/brelok1.jpg",
@@ -2683,7 +2683,7 @@
         "artist": "White Widow",
         "album": "Kuba vs Bary",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": true,
         "images": [
             "media/white widow - kuba vs bary/brelok1.jpg",
@@ -2699,7 +2699,7 @@
         "artist": "XXXTentacion",
         "album": "17",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/xxxtentacion - 17/brelok1.jpg",
@@ -2715,7 +2715,7 @@
         "artist": "ZillaKami",
         "album": "Dog Boy",
         "price": 35,
-        "promoPrice": 30.99,
+        "promoPrice": 33.90,
         "isPolish": false,
         "images": [
             "media/zillakami - dogboy/brelok1.jpg",
